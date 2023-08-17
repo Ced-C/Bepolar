@@ -2,8 +2,9 @@ name: Bépolar
 name8: bepolar
 locale: fr
 variant: bepolar
-description: French Bépolar, Derived from BÉPO (a French Dvorak-style layout), using a dead-key for diacritics.
+description: Fr+Bépolar — Derived from BÉPO (a French Dvorak-style layout), using a Lafayette dead-key for diacritics.
 url: https:tobemade.example
+author : Cédric CORRÈGE
 geometry: ERGO
 version: 0.2.0
 
