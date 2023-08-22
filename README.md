@@ -3,7 +3,7 @@ Bépolar
 
 Dérivé de BÉPO, Bépolar est une disposition clavier s’appuyant sur des mécanismes modernes afin d’améliorer le confort de frappe.
 
-## Cahier des Charges
+## 📑 Cahier des Charges
 
 * Le moins de changement possible par rapport à BÉPO
 * Toutes les lettres sont situées sur le pavé des 30 (3x5x2) touches principales du clavier
@@ -19,7 +19,7 @@ Pour ceux qui ne peuvent vivre sans VIM, [QWERTY-Lafayette](https://qwerty-lafay
 
 
 
-## Disposition
+## ⌨ Disposition
 ### Classique — Couche 0
 La disposition Bépolar est présenté ci-dessous :
 
@@ -37,6 +37,7 @@ L’ensemble des symboles accessibles sont ici présentés :
 - La touche morte `*` suivie d’une voyelle (colonne du milieu ou *home row*) donne généralement cette dernière avec un accent grave (*i.e.* `à`, `ù`, `è`)
 - La touche morte `*` suivie de la touche au-dessus de cette voyelle (colonne haute) donne un accent circonflexe (*i.e.* `â`, `û`, `î`, `ô`). ⚠ Exception pour le `ê` qui est à la droite du `è`
 - La touche morte `*` suivie de `i` donne `é`
+- Deux appuis successif sur la touche morte `**` donne une touche morte trémas `*¨`. Pour faire un `ï` par exemple, il suffit de faire l’enchainement `**i` (soit trois touches, mais les mots à trémas sont rares).
 
 L’utilisation de la touche morte pour les accents n’est peut-être pas intuitive de prime abord, mais permet de placer l’ensemble des lettres sur les 30 touches, tout en favorisant l’apprentissage de la mémoire musculaire.
 
@@ -59,7 +60,7 @@ La touche espace est utiliser pour les symboles suivants :
 - L’underscore (AltGr+espace) : `_`
 - L’espace insécable (AltGr+shift+espace) : ` `
 
-## Installation
+## 🧩 Installation
 Les pilotes pour Linux, Mac et Windows sont disponibles dans le dossier `dist`.
 La dernière version de [Kalamine](https://github.com/fabi1cazenave/kalamine) est nécessaire pour générer la version actuelle ou une variante de Bépolar.
 
@@ -97,10 +98,10 @@ sudo python3 ./script/kalamine_clean.py
 ```
 
 
-## Faites votre propre disposition
+## 💡 Faites votre propre disposition
 Si vous souhaitez modifier la disposition pour l’adapter à vos besoins, le fichier `Bépolar.yml` est lisible facilement et peut être modifié à la main avant d’utiliser kalamine pour générer vos propres pilotes.
 
-## Mention
+## 🙏 Mention
 Un grand merci à `Kazé` pour ses nombreux softs utiles dont :
 - kalamine pour générer les pilotes
 - X-keyboard pour générer les images de layout
