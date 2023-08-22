@@ -1,12 +1,12 @@
 //
 // File          : bepolar.xkb
-// Project page  : https:tobemade.example
+// Project page  : https://github.com/Ced-C/Bepolar
 // Author        : Cédric CORRÈGE
 // Version       : 0.2.0
-// Last change   : 2023-08-17
+// Last change   : 2023-08-22
 // License       : WTFPL - Do What The Fuck You Want Public License
 //
-// Fr+Bépolar — Derived from BÉPO (a French Dvorak-style layout), using a Lafayette dead-key for diacritics.
+// Fr (Bepolar)
 //
 // To apply this keymap, use:
 //   xkbcomp -w9 bepolar.xkb $DISPLAY
@@ -19,7 +19,7 @@ xkb_keymap {
 
   // Base layer + dead key
   // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━┓
-  // │ ¬ § │ # ¡ │ « “ │ » ” │ (   │ )   │ @   │ + ± │ -   │ / | │ * × │*µ ¶ │ ^*^ ┃          ┃
+  // │ ¬   │ # ¡ │ « “ │ » ” │ (   │ )   │ @   │ + ± │ ^*^ │ / | │ * × │*µ ¶ │ §   ┃          ┃
   // │ ~*~ │ 1 # │ 2 < │ 3 > │ 4 ( │ 5 ) │ 6 @ │ 7 + │ 8   │ 9 \ │ 0 ° │ = ≠ │ % ‰ ┃ ⌫        ┃
   // ┢━━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┳━━━━━━━┫
   // ┃        ┃ B   │ M   │ P   │ O   │ W   │ Z   │ V   │ D   │ L   │ J   │ {   │ }   ┃       ┃
@@ -65,7 +65,7 @@ xkb_keymap {
     // with xkbcomp, so let’s use two groups instead and make the AltGr key a
     // group selector.
 
-    name[group1]= "Fr+Bépolar — Derived from BÉPO (a French Dvorak-style layout), using a Lafayette dead-key for diacritics.";
+    name[group1]= "Fr (Bepolar)";
     name[group2]= "AltGr";
 
     key.type[group1] = "FOUR_LEVEL";
@@ -79,7 +79,7 @@ xkb_keymap {
     key <AE05> {[ 5               , parenright      , parenright      , VoidSymbol      ],[ 5               , 5               ]}; // 5 ) )   5 5
     key <AE06> {[ 6               , at              , at              , VoidSymbol      ],[ 6               , 6               ]}; // 6 @ @   6 6
     key <AE07> {[ 7               , plus            , plus            , plusminus       ],[ 7               , 7               ]}; // 7 + + ± 7 7
-    key <AE08> {[ 8               , minus           , VoidSymbol      , VoidSymbol      ],[ 8               , 8               ]}; // 8 -     8 8
+    key <AE08> {[ 8               , asciicircum     , VoidSymbol      , dead_circumflex ],[ 8               , 8               ]}; // 8 ^   ^ 8 8
     key <AE09> {[ 9               , slash           , backslash       , bar             ],[ 9               , 9               ]}; // 9 / \ | 9 9
     key <AE10> {[ 0               , asterisk        , degree          , multiply        ],[ 0               , 0               ]}; // 0 * ° × 0 0
 
@@ -121,13 +121,13 @@ xkb_keymap {
 
     // Pinky keys
     key <AE11> {[ equal           , dead_greek      , notequal        , paragraph       ],[ VoidSymbol      , VoidSymbol      ]}; // = µ ≠ ¶
-    key <AE12> {[ percent         , asciicircum     , U2030           , dead_circumflex ],[ VoidSymbol      , VoidSymbol      ]}; // % ^ ‰ ^
+    key <AE12> {[ percent         , section         , U2030           , VoidSymbol      ],[ VoidSymbol      , VoidSymbol      ]}; // % § ‰
     key <AE13> {[ VoidSymbol      , VoidSymbol      , VoidSymbol      , VoidSymbol      ],[ VoidSymbol      , VoidSymbol      ]}; //
     key <AD11> {[ bracketleft     , braceleft       , VoidSymbol      , VoidSymbol      ],[ VoidSymbol      , VoidSymbol      ]}; // [ {
     key <AD12> {[ bracketright    , braceright      , VoidSymbol      , VoidSymbol      ],[ VoidSymbol      , VoidSymbol      ]}; // ] }
     key <AC11> {[ apostrophe      , quotedbl        , grave           , grave           ],[ VoidSymbol      , VoidSymbol      ]}; // ' " ` `
     key <AB11> {[ VoidSymbol      , VoidSymbol      , VoidSymbol      , VoidSymbol      ],[ VoidSymbol      , VoidSymbol      ]}; //
-    key <TLDE> {[ asciitilde      , notsign         , dead_tilde      , section         ],[ VoidSymbol      , VoidSymbol      ]}; // ~ ¬ ~ §
+    key <TLDE> {[ asciitilde      , notsign         , dead_tilde      , VoidSymbol      ],[ VoidSymbol      , VoidSymbol      ]}; // ~ ¬ ~
     key <BKSL> {[ dollar          , ampersand       , EuroSign        , dead_currency   ],[ VoidSymbol      , VoidSymbol      ]}; // $ & € ¤
     key <LSGT> {[ slash           , backslash       , bar             , brokenbar       ],[ VoidSymbol      , VoidSymbol      ]}; // / \ | ¦
 

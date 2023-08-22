@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<!-- Fr+Bépolar — Derived from BÉPO (a French Dvorak-style layout), using a Lafayette dead-key for diacritics.
+<!-- Fr (Bepolar)
   File          : bepolar.keylayout
-  Project page  : https:tobemade.example
+  Project page  : https://github.com/Ced-C/Bepolar
   Author        : Cédric CORRÈGE
   Version       : 0.2.0
-  Last change   : 2023-08-17
+  Last change   : 2023-08-22
   License       : WTFPL - Do What The Fuck You Want Public License
   Reference     : http://developer.apple.com/library/mac/#technotes/tn2002/tn2056.html
 
@@ -29,7 +29,7 @@
 
   Base+Option layers
   ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━┓
-  │ ¬   │ # 1 │ « 2 │ » 3 │ ( 4 │ ) 5 │ @ 6 │ + 7 │ - 8 │ / 9 │ * 0 │*µ   │ ^   ┃          ┃
+  │ ¬   │ # 1 │ « 2 │ » 3 │ ( 4 │ ) 5 │ @ 6 │ + 7 │ ^ 8 │ / 9 │ * 0 │*µ   │ §   ┃          ┃
   │ ~   │ 1 1 │ 2 2 │ 3 3 │ 4 4 │ 5 5 │ 6 6 │ 7 7 │ 8 8 │ 9 9 │ 0 0 │ =   │ %   ┃ ⌫        ┃
   ┢━━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┳━━━━━━━┫
   ┃        ┃ B ¬ │ M « │ P » │ O € │ W ‰ │ Z*^ │ V*¨ │ D × │ L*´ │ J ° │ {   │ }   ┃       ┃
@@ -45,7 +45,7 @@
   ┃ Ctrl  ┃ super ┃ Alt   ┃ ␣                              ┃ AltGr ┃ super ┃ menu  ┃ Ctrl  ┃
   ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
   -->
-<keyboard group="0" id="0" name="Fr+Bépolar — Derived from BÉPO (a French Dvorak-style layout), using a Lafayette dead-key for diacritics." maxout="1">
+<keyboard group="0" id="0" name="Fr (Bepolar)" maxout="1">
   <layouts>
     <layout first="0" last="17" modifiers="commonModifiers" mapSet="ANSI" />
   </layouts>
@@ -214,7 +214,7 @@
       <key code="23"  action=")" />
       <key code="22"  output="@" />
       <key code="26"  action="+" />
-      <key code="28"  action="-" />
+      <key code="28"  action="^" />
       <key code="25"  action="/" />
       <key code="29"  action="*" />
 
@@ -256,11 +256,11 @@
 
       <!-- Pinky keys -->
       <key code="27"  action="dead_greek" />
-      <key code="24"  action="^" />
+      <key code="24"  output="§" />
       <key code="33"  output="{" />
       <key code="30"  output="}" />
       <key code="39"  action="x0022" />
-      <key code="50"  action="¬" />
+      <key code="50"  output="¬" />
       <key code="42"  action="x0026" />
       <key code="10"  action="\" />
 
@@ -600,7 +600,7 @@
       <key code="29"  action="0" />
 
       <!-- Letters, first row -->
-      <key code="12"  action="¬" />
+      <key code="12"  output="¬" />
       <key code="13"  action="«" />
       <key code="14"  action="»" />
       <key code="15"  output="€" />
@@ -1092,7 +1092,7 @@
     </action>
     <action id="#">
       <when state="none"       output="#" />
-      <when state="1dk"        output="§" />
+      <when state="1dk"        output="©" />
     </action>
     <action id="2">
       <when state="none"       output="2" />
@@ -1149,10 +1149,9 @@
       <when state="none"       output="8" />
       <when state="circumflex" output="⁸" />
     </action>
-    <action id="-">
-      <when state="none"       output="-" />
-      <when state="1dk"        output="|" />
-      <when state="circumflex" output="⁻" />
+    <action id="^">
+      <when state="none"       output="^" />
+      <when state="1dk"        output="±" />
     </action>
     <action id="9">
       <when state="none"       output="9" />
@@ -1170,7 +1169,7 @@
     </action>
     <action id="*">
       <when state="none"       output="*" />
-      <when state="1dk"        output="|" />
+      <when state="1dk"        output="^" />
     </action>
 
     <!-- Letters, first row -->
@@ -1182,7 +1181,7 @@
     </action>
     <action id="B">
       <when state="none"       output="B" />
-      <when state="1dk"        output="^" />
+      <when state="1dk"        output="¶" />
       <when state="greek"      output="Β" />
       <when state="currency"   output="₱" />
     </action>
@@ -1632,10 +1631,6 @@
       <when state="none"       output="%" />
       <when state="1dk"        output="≠" />
     </action>
-    <action id="^">
-      <when state="none"       output="^" />
-      <when state="1dk"        output="*" />
-    </action>
     <action id="'">
       <when state="none"       output="'" />
       <when state="1dk"        output="ñ" />
@@ -1647,10 +1642,6 @@
     <action id="~">
       <when state="none"       output="~" />
       <when state="1dk"        output="*" />
-    </action>
-    <action id="¬">
-      <when state="none"       output="¬" />
-      <when state="1dk"        output="©" />
     </action>
     <action id="$">
       <when state="none"       output="$" />
