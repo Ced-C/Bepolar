@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<!-- French (Bepolar)
-  File          : bepolar.keylayout
+<!-- French (Bépolar)
+  File          : bpolar.keylayout
   Project page  : https://github.com/Ced-C/Bepolar
   Author        : Cédric CORRÈGE
   Version       : 0.3.0
-  Last change   : 2023-08-27
+  Last change   : 2023-08-29
   License       : WTFPL - Do What The Fuck You Want Public License
   Reference     : http://developer.apple.com/library/mac/#technotes/tn2002/tn2056.html
 
@@ -45,7 +45,7 @@
   ┃ Ctrl  ┃ super ┃ Alt   ┃ ␣                              ┃ AltGr ┃ super ┃ menu  ┃ Ctrl  ┃
   ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
   -->
-<keyboard group="0" id="0" name="French (Bepolar)" maxout="1">
+<keyboard group="0" id="0" name="French (Bépolar)" maxout="1">
   <layouts>
     <layout first="0" last="17" modifiers="commonModifiers" mapSet="ANSI" />
   </layouts>
