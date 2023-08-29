@@ -64,7 +64,7 @@ La touche espace est utiliser pour les symboles suivants :
 Les pilotes pour Linux, Mac et Windows sont disponibles dans le dossier `dist`.
 La dernière version de [Kalamine](https://github.com/fabi1cazenave/kalamine) est nécessaire pour générer la version actuelle ou une variante de Bépolar.
 
-Pour installer Kalamine :
+Pour installer Kalamine (impérativement **en mode root**) :
 ```bash
 sudo pip install kalamine # Yes, you *do* need root privileges
 ```
@@ -96,6 +96,24 @@ sudo xkalamine install Bépolar.yml
 sudo python3 ./script/kalamine_clean.py
 # kalamine n’est plus capable de supprimer la disposition, mais, `sudo ./set_org_xkb.sh` permet de revenir comme avant si les étapes précédantes ont bien été suivies.
 ```
+Il faut ensuite se déconnecter et se **reconecter à sa session**. 
+
+#### Bug sous Ubuntu/Gnome
+Je ne suis pas certain que cela afecte d’autres personnes, mais chez moi, sous Ubuntu 22.04 — Gnome 42.9, si une seule disposition avec la couche 1dk est instlallé, la couche AltGr ne foncitonne pas. 
+Par exemple, dans le screen suivant, Il faut que Bépolar soit impérativement en dernier pour que la couche AltGr fonctionne. 
+![disposition bepolar](img/Screenshot_layout_order.png)
+Dans le cas contraire, voici le comportement en fonction de la disposition :
+1. la touche AltGr affiche les charactères de la couche touche morte
+2. la touche AltGr affiche la couche alpha
+3. *idem*
+4. Fonctionne bien
+
+Pour y rémédier, je propose un deuxième fichier `bépolar2.yml` qui ne sert qu’a installer une dispo supplémentaire pour avoir un comportement correct. Pour l’installer :
+```bash
+sudo xkalamine install Bépolar2.yml
+sudo python3 ./script/kalamine_clean.py
+```
+Il faut ensuite se déconnecter et se **reconecter à sa session**. 
 
 
 ## 💡 Faites votre propre disposition
