@@ -2,11 +2,11 @@
 // File          : bepolar.xkb
 // Project page  : https://github.com/Ced-C/Bepolar
 // Author        : Cédric CORRÈGE
-// Version       : 0.2.0
-// Last change   : 2023-08-22
+// Version       : 0.3.0
+// Last change   : 2023-09-06
 // License       : WTFPL - Do What The Fuck You Want Public License
 //
-// Fr (Bepolar)
+// French (Bepolar)
 //
 // To apply this keymap, use:
 //   xkbcomp -w9 bepolar.xkb $DISPLAY
@@ -19,8 +19,8 @@ xkb_keymap {
 
   // Base layer + dead key
   // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━┓
-  // │ ¬   │ # ¡ │ « “ │ » ” │ (   │ )   │ @   │ + ± │ ^*^ │ / | │ * × │*µ ¶ │ §   ┃          ┃
-  // │ ~*~ │ 1 # │ 2 < │ 3 > │ 4 ( │ 5 ) │ 6 @ │ 7 + │ 8   │ 9 \ │ 0 ° │ = ≠ │ % ‰ ┃ ⌫        ┃
+  // │ ¬   │ # ¡ │ « “ │ » ” │ (   │ )   │ @   │ + ± │ ^   │ / | │ * × │*µ ¶ │ §   ┃          ┃
+  // │ ~*~ │ 1 # │ 2 < │ 3 > │ 4 ( │ 5 ) │ 6 @ │ 7 + │ 8*^ │ 9 \ │ 0 ° │ = ≠ │ % ‰ ┃ ⌫        ┃
   // ┢━━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┳━━━━━━━┫
   // ┃        ┃ B   │ M   │ P   │ O   │ W   │ Z   │ V   │ D   │ L   │ J   │ {   │ }   ┃       ┃
   // ┃ ↹      ┃   â │   û │   î │   ô │   œ │     │   ŭ │     │     │     │ [   │ ]   ┃       ┃
@@ -65,7 +65,7 @@ xkb_keymap {
     // with xkbcomp, so let’s use two groups instead and make the AltGr key a
     // group selector.
 
-    name[group1]= "Fr (Bepolar)";
+    name[group1]= "French (Bepolar)";
     name[group2]= "AltGr";
 
     key.type[group1] = "FOUR_LEVEL";
@@ -79,7 +79,7 @@ xkb_keymap {
     key <AE05> {[ 5               , parenright      , parenright      , VoidSymbol      ],[ 5               , 5               ]}; // 5 ) )   5 5
     key <AE06> {[ 6               , at              , at              , VoidSymbol      ],[ 6               , 6               ]}; // 6 @ @   6 6
     key <AE07> {[ 7               , plus            , plus            , plusminus       ],[ 7               , 7               ]}; // 7 + + ± 7 7
-    key <AE08> {[ 8               , asciicircum     , VoidSymbol      , dead_circumflex ],[ 8               , 8               ]}; // 8 ^   ^ 8 8
+    key <AE08> {[ 8               , asciicircum     , dead_circumflex , VoidSymbol      ],[ 8               , 8               ]}; // 8 ^ ^   8 8
     key <AE09> {[ 9               , slash           , backslash       , bar             ],[ 9               , 9               ]}; // 9 / \ | 9 9
     key <AE10> {[ 0               , asterisk        , degree          , multiply        ],[ 0               , 0               ]}; // 0 * ° × 0 0
 

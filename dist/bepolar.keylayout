@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<!-- Fr (Bepolar)
+<!-- French (Bepolar)
   File          : bepolar.keylayout
   Project page  : https://github.com/Ced-C/Bepolar
   Author        : Cédric CORRÈGE
-  Version       : 0.2.0
-  Last change   : 2023-08-22
+  Version       : 0.3.0
+  Last change   : 2023-09-06
   License       : WTFPL - Do What The Fuck You Want Public License
   Reference     : http://developer.apple.com/library/mac/#technotes/tn2002/tn2056.html
 
@@ -45,7 +45,7 @@
   ┃ Ctrl  ┃ super ┃ Alt   ┃ ␣                              ┃ AltGr ┃ super ┃ menu  ┃ Ctrl  ┃
   ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
   -->
-<keyboard group="0" id="0" name="Fr (Bepolar)" maxout="1">
+<keyboard group="0" id="0" name="French (Bepolar)" maxout="1">
   <layouts>
     <layout first="0" last="17" modifiers="commonModifiers" mapSet="ANSI" />
   </layouts>
@@ -214,7 +214,7 @@
       <key code="23"  action=")" />
       <key code="22"  output="@" />
       <key code="26"  action="+" />
-      <key code="28"  action="^" />
+      <key code="28"  output="^" />
       <key code="25"  action="/" />
       <key code="29"  action="*" />
 
@@ -478,7 +478,7 @@
       <key code="14"  output="]" />
       <key code="15"  action="$" />
       <key code="17"  action="%" />
-      <key code="16"  action="^" />
+      <key code="16"  output="^" />
       <key code="32"  action="x0026" />
       <key code="34"  action="*" />
       <key code="31"  action="'" />
@@ -1092,7 +1092,7 @@
     </action>
     <action id="#">
       <when state="none"       output="#" />
-      <when state="1dk"        output="©" />
+      <when state="1dk"        output="€" />
     </action>
     <action id="2">
       <when state="none"       output="2" />
@@ -1101,7 +1101,7 @@
     </action>
     <action id="«">
       <when state="none"       output="«" />
-      <when state="1dk"        output="¡" />
+      <when state="1dk"        output="©" />
     </action>
     <action id="3">
       <when state="none"       output="3" />
@@ -1110,7 +1110,7 @@
     </action>
     <action id="»">
       <when state="none"       output="»" />
-      <when state="1dk"        output="“" />
+      <when state="1dk"        output="¡" />
     </action>
     <action id="4">
       <when state="none"       output="4" />
@@ -1142,40 +1142,37 @@
     </action>
     <action id="+">
       <when state="none"       output="+" />
-      <when state="1dk"        output="”" />
+      <when state="1dk"        output="“" />
       <when state="circumflex" output="⁺" />
     </action>
     <action id="8">
       <when state="none"       output="8" />
+      <when state="1dk"        output="+" />
       <when state="circumflex" output="⁸" />
-    </action>
-    <action id="^">
-      <when state="none"       output="^" />
-      <when state="1dk"        output="±" />
     </action>
     <action id="9">
       <when state="none"       output="9" />
-      <when state="1dk"        output="+" />
+      <when state="1dk"        output="*" />
       <when state="circumflex" output="⁹" />
     </action>
     <action id="/">
       <when state="none"       output="/" />
-      <when state="1dk"        output="€" />
+      <when state="1dk"        output="`" />
     </action>
     <action id="0">
       <when state="none"       output="0" />
-      <when state="1dk"        output="\" />
+      <when state="1dk"        output="^" />
       <when state="circumflex" output="⁰" />
     </action>
     <action id="*">
       <when state="none"       output="*" />
-      <when state="1dk"        output="^" />
+      <when state="1dk"        output="±" />
     </action>
 
     <!-- Letters, first row -->
     <action id="b">
       <when state="none"       output="b" />
-      <when state="1dk"        output="‰" />
+      <when state="1dk"        output="≠" />
       <when state="greek"      output="β" />
       <when state="currency"   output="฿" />
     </action>
@@ -1187,7 +1184,7 @@
     </action>
     <action id="m">
       <when state="none"       output="m" />
-      <when state="1dk"        output="â" />
+      <when state="1dk"        output="‰" />
       <when state="acute"      output="ḿ" />
       <when state="greek"      output="μ" />
       <when state="currency"   output="₥" />
@@ -1201,7 +1198,7 @@
     </action>
     <action id="p">
       <when state="none"       output="p" />
-      <when state="1dk"        output="û" />
+      <when state="1dk"        output="â" />
       <when state="acute"      output="ṕ" />
       <when state="greek"      output="π" />
       <when state="currency"   output="₰" />
@@ -1215,7 +1212,7 @@
     </action>
     <action id="o">
       <when state="none"       output="o" />
-      <when state="1dk"        output="î" />
+      <when state="1dk"        output="û" />
       <when state="grave"      output="ò" />
       <when state="acute"      output="ó" />
       <when state="circumflex" output="ô" />
@@ -1237,7 +1234,7 @@
     </action>
     <action id="w">
       <when state="none"       output="w" />
-      <when state="1dk"        output="ô" />
+      <when state="1dk"        output="î" />
       <when state="grave"      output="ẁ" />
       <when state="acute"      output="ẃ" />
       <when state="circumflex" output="ŵ" />
@@ -1269,7 +1266,7 @@
     </action>
     <action id="v">
       <when state="none"       output="v" />
-      <when state="1dk"        output="œ" />
+      <when state="1dk"        output="ô" />
       <when state="tilde"      output="ṽ" />
     </action>
     <action id="V">
@@ -1317,7 +1314,7 @@
     <!-- Letters, second row -->
     <action id="a">
       <when state="none"       output="a" />
-      <when state="1dk"        output="ŭ" />
+      <when state="1dk"        output="œ" />
       <when state="grave"      output="à" />
       <when state="acute"      output="á" />
       <when state="circumflex" output="â" />
@@ -1339,7 +1336,7 @@
     </action>
     <action id="u">
       <when state="none"       output="u" />
-      <when state="1dk"        output="à" />
+      <when state="1dk"        output="ŭ" />
       <when state="grave"      output="ù" />
       <when state="acute"      output="ú" />
       <when state="circumflex" output="û" />
@@ -1361,7 +1358,7 @@
     </action>
     <action id="i">
       <when state="none"       output="i" />
-      <when state="1dk"        output="ù" />
+      <when state="1dk"        output="à" />
       <when state="grave"      output="ì" />
       <when state="acute"      output="í" />
       <when state="circumflex" output="î" />
@@ -1383,7 +1380,7 @@
     </action>
     <action id="e">
       <when state="none"       output="e" />
-      <when state="1dk"        output="é" />
+      <when state="1dk"        output="ù" />
       <when state="grave"      output="è" />
       <when state="acute"      output="é" />
       <when state="circumflex" output="ê" />
@@ -1407,7 +1404,7 @@
     </action>
     <action id=",">
       <when state="none"       output="," />
-      <when state="1dk"        output="è" />
+      <when state="1dk"        output="é" />
     </action>
     <action id=";">
       <when state="none"       output=";" />
@@ -1415,7 +1412,7 @@
     </action>
     <action id="c">
       <when state="none"       output="c" />
-      <when state="1dk"        output="ê" />
+      <when state="1dk"        output="è" />
       <when state="acute"      output="ć" />
       <when state="circumflex" output="ĉ" />
       <when state="cedilla"    output="ç" />
@@ -1431,7 +1428,7 @@
     </action>
     <action id="t">
       <when state="none"       output="t" />
-      <when state="1dk"        output="ç" />
+      <when state="1dk"        output="ê" />
       <when state="diaeresis"  output="ẗ" />
       <when state="cedilla"    output="ţ" />
       <when state="greek"      output="τ" />
@@ -1445,7 +1442,7 @@
     </action>
     <action id="s">
       <when state="none"       output="s" />
-      <when state="1dk"        output="™" />
+      <when state="1dk"        output="ç" />
       <when state="acute"      output="ś" />
       <when state="circumflex" output="ŝ" />
       <when state="cedilla"    output="ş" />
@@ -1463,7 +1460,7 @@
     </action>
     <action id="r">
       <when state="none"       output="r" />
-      <when state="1dk"        output="ß" />
+      <when state="1dk"        output="™" />
       <when state="acute"      output="ŕ" />
       <when state="cedilla"    output="ŗ" />
       <when state="greek"      output="ρ" />
@@ -1478,7 +1475,7 @@
     </action>
     <action id="n">
       <when state="none"       output="n" />
-      <when state="1dk"        output="®" />
+      <when state="1dk"        output="ß" />
       <when state="grave"      output="ǹ" />
       <when state="acute"      output="ń" />
       <when state="tilde"      output="ñ" />
@@ -1500,7 +1497,7 @@
     <!-- Letters, third row -->
     <action id="-">
       <when state="none"       output="-" />
-      <when state="1dk"        output="|" />
+      <when state="1dk"        output="€" />
       <when state="circumflex" output="⁻" />
     </action>
     <action id="!">
@@ -1509,7 +1506,7 @@
     </action>
     <action id="y">
       <when state="none"       output="y" />
-      <when state="1dk"        output="—" />
+      <when state="1dk"        output="|" />
       <when state="grave"      output="ỳ" />
       <when state="acute"      output="ý" />
       <when state="circumflex" output="ŷ" />
@@ -1541,7 +1538,7 @@
     </action>
     <action id=".">
       <when state="none"       output="." />
-      <when state="1dk"        output="ŷ" />
+      <when state="1dk"        output="—" />
     </action>
     <action id=":">
       <when state="none"       output=":" />
@@ -1549,7 +1546,7 @@
     </action>
     <action id="k">
       <when state="none"       output="k" />
-      <when state="1dk"        output="…" />
+      <when state="1dk"        output="ŷ" />
       <when state="acute"      output="ḱ" />
       <when state="cedilla"    output="ķ" />
       <when state="greek"      output="κ" />
@@ -1569,7 +1566,7 @@
     </action>
     <action id="q">
       <when state="none"       output="q" />
-      <when state="1dk"        output="æ" />
+      <when state="1dk"        output="…" />
       <when state="greek"      output="χ" />
     </action>
     <action id="Q">
@@ -1578,7 +1575,7 @@
     </action>
     <action id="g">
       <when state="none"       output="g" />
-      <when state="1dk"        output="€" />
+      <when state="1dk"        output="æ" />
       <when state="acute"      output="ǵ" />
       <when state="circumflex" output="ĝ" />
       <when state="cedilla"    output="ģ" />
@@ -1623,17 +1620,17 @@
     <!-- Pinky keys -->
     <action id="=">
       <when state="none"       output="=" />
-      <when state="1dk"        output="°" />
+      <when state="1dk"        output="\" />
       <when state="circumflex" output="⁼" />
       <when state="tilde"      output="≃" />
     </action>
     <action id="%">
       <when state="none"       output="%" />
-      <when state="1dk"        output="≠" />
+      <when state="1dk"        output="°" />
     </action>
     <action id="'">
       <when state="none"       output="'" />
-      <when state="1dk"        output="ñ" />
+      <when state="1dk"        output="®" />
     </action>
     <action id="x0022">
       <when state="none"       output="&#x0022;" />
@@ -1645,7 +1642,7 @@
     </action>
     <action id="$">
       <when state="none"       output="$" />
-      <when state="1dk"        output="`" />
+      <when state="1dk"        output="ñ" />
     </action>
     <action id="x0026">
       <when state="none"       output="&#x0026;" />
@@ -1653,7 +1650,7 @@
     </action>
     <action id="/">
       <when state="none"       output="/" />
-      <when state="1dk"        output="€" />
+      <when state="1dk"        output="`" />
     </action>
     <action id="\">
       <when state="none"       output="\" />
