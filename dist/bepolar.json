@@ -1,6 +1,6 @@
 {
-  "name": "bepolar",
-  "description": "French (Bepolar)",
+  "name": "Bépolar",
+  "description": "French (Bépolar)",
   "geometry": "ergo",
   "keymap": {
     "Digit1": [ "1", "#", "1", "1" ],

@@ -3,11 +3,10 @@
 // Project page  : https://github.com/Ced-C/Bepolar
 // Author        : Cédric CORRÈGE
 // Version       : 0.3.0
-// Last change   : 2023-09-06
+// Last change   : 2023-09-07
 // License       : WTFPL - Do What The Fuck You Want Public License
 //
-// French (Bepolar)
-// French (Bepolar)
+// French (Bépolar)
 //
 // To apply this keymap, use:
 //   xkbcomp -w9 bepolar.xkb $DISPLAY
@@ -66,8 +65,7 @@ xkb_keymap {
     // with xkbcomp, so let’s use two groups instead and make the AltGr key a
     // group selector.
 
-    name[group1]= "French (Bepolar)";
-    name[group1]= "French (Bepolar)";
+    name[group1]= "French (Bépolar)";
     name[group2]= "AltGr";
 
     key.type[group1] = "FOUR_LEVEL";
