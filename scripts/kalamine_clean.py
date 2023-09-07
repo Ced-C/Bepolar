@@ -2,16 +2,19 @@
 from bs4 import BeautifulSoup
 import re
 
-# Remove attribute `type=kalamine` from rules files
+# Remove attribute `type="kalamine"` from rules files
 path = "/usr/share/X11/xkb/rules/"
 for xml in ['base.xml', 'evdev.xml']:
-    with open(path+xml, 'r') as f:
-        file = f.read() 
-    s = BeautifulSoup(file, 'xml')
-    for kalamine in s.find_all("variant",{'type':'kalamine'}):
-        del kalamine['type']
-    with open(path+xml, 'w') as f_out:
-        print(s.prettify(), file=f_out)
+    with open(path+xml,'r') as file:
+        lines = file.readlines()
+    with open(path+xml,'w') as file:
+        for line in lines:
+            if line.find('<variant type="kalamine">') == -1:
+                file.write(line)
+            else:
+                file.write(
+                    line.replace('<variant type="kalamine">', '<variant>')
+                )
 
 # Remove `KALAMINE::BEPOLAR::BEGIN` & `KALAMINE::BEPOLAR::END` from fr file
 path = "/usr/share/X11/xkb/symbols/"

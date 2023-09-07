@@ -1,8 +1,8 @@
-name: bepolar
+name: Bépolar
 name8: bepolar
 locale: fr
 variant: bepolar
-description: French (Bepolar)
+description: French (Bépolar)
 url: https://github.com/Ced-C/Bepolar
 author : Cédric CORRÈGE
 geometry: ERGO
@@ -41,7 +41,7 @@ altgr: |
 
 spacebar:
   shift:       "\u202f"  # NARROW NO-BREAK SPACE
-  altgr:       "\u005f"  # UNDERSCOR
+  altgr:       "\u005f"  # UNDERSCORE
   altgr_shift: "\u00a0"  # NO-BREAK SPACE
   1dk:         "\u2019"  # RIGHT SINGLE QUOTATION MARK
   1dk_shift:   "\u2019"  # RIGHT SINGLE QUOTATION MARK
