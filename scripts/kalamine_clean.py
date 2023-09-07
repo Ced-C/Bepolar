@@ -1,5 +1,4 @@
 #/bin/python3
-from bs4 import BeautifulSoup
 import re
 
 # Remove attribute `type="kalamine"` from rules files
@@ -15,7 +14,7 @@ for xml in ['base.xml', 'evdev.xml']:
                 file.write(
                     line.replace('<variant type="kalamine">', '<variant>')
                 )
-
+print('`xkb/rules` files updated : `type="kalamine"` removed')
 # Remove `KALAMINE::BEPOLAR::BEGIN` & `KALAMINE::BEPOLAR::END` from fr file
 path = "/usr/share/X11/xkb/symbols/"
  
@@ -27,3 +26,5 @@ with open(path+'fr','w') as file:
         x = re.findall("^// KALAMINE::", line)
         if not x:
             file.write(line)
+
+print("`xkb/symbols/fr` file updated : `KALAMINE::` lines removed")
