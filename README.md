@@ -69,17 +69,25 @@ Pour installer Kalamine (impérativement **en mode root**) :
 sudo pip install kalamine # Yes, you *do* need root privileges
 ```
 
-Pour générer les pilotes, télécharger le fichier `Bépolar.yml` du répertoire et faites un :
+Pour générer les pilotes, télécharger le fichier `Bepolar.yml` du répertoire et faites un :
 ```bash
-kalamine Bépolar.yml
+kalamine Bepolar.yml
 ```
 Il est ensuite possible d’utiliser les fichiers générer pour installer les pilotes dans votre système.
 ### Spécificité Linux :
+#### Installation rapide Ubuntu/Debian
+Pour installer rapidement la dispo sans ajouter de packets python le script quick_install peut être lancer pour cela faire : 
+```bash
+git clone https://github.com/Ced-C/Bepolar
+cd Bepolar
+./scripts/quick_install.sh
+```
+#### Installation depuis les sources
 Sous Linux Kalamine est capable d’installer et de supprimer des dispositions :
 #### Sous X11
 ```bash
-sudo xkalamine install Bépolar.yml # insalle la dispo
-xkalamine apply Bépolar.yml # teste la dispo en locale
+sudo xkalamine install Bepolar.yml # insalle la dispo
+xkalamine apply Bepolar.yml # teste la dispo en locale
 ```
 
 #### Sous Wayland
@@ -91,7 +99,7 @@ sudo cp $xkbpath/rules/evdev.xml $xkbpath/rules/evdev.xml.bk
 sudo cp $xkbpath/rules/base.xml $xkbpath/rules/base.xml.bk
 sudo cp $xkbpath/symbols/fr $xkbpath/symbols/fr.bk
 
-sudo xkalamine install Bépolar.yml
+sudo xkalamine install Bepolar.yml
 # supprime les varibles qui posent problèmes pour wayland
 sudo python3 ./script/kalamine_clean.py
 # kalamine n’est plus capable de supprimer la disposition, mais, `sudo ./set_org_xkb.sh` permet de revenir comme avant si les étapes précédantes ont bien été suivies.
@@ -108,16 +116,16 @@ Dans le cas contraire, voici le comportement en fonction de la disposition :
 3. *idem*
 4. Fonctionne bien
 
-Pour y rémédier, je propose un deuxième fichier `bépolar2.yml` qui ne sert qu’a installer une dispo supplémentaire pour avoir un comportement correct. Pour l’installer :
+Pour y rémédier, je propose un deuxième fichier `Bepolar2.yml` qui ne sert qu’a installer une dispo supplémentaire pour avoir un comportement correct. Pour l’installer :
 ```bash
-sudo xkalamine install Bépolar2.yml
+sudo xkalamine install Bepolar2.yml
 sudo python3 ./script/kalamine_clean.py
 ```
 Il faut ensuite se déconnecter et se **reconecter à sa session**. 
 
 
 ## 💡 Faites votre propre disposition
-Si vous souhaitez modifier la disposition pour l’adapter à vos besoins, le fichier `Bépolar.yml` est lisible facilement et peut être modifié à la main avant d’utiliser kalamine pour générer vos propres pilotes.
+Si vous souhaitez modifier la disposition pour l’adapter à vos besoins, le fichier `Bepolar.yml` est lisible facilement et peut être modifié à la main avant d’utiliser kalamine pour générer vos propres pilotes.
 
 ## 🙏 Mention
 Un grand merci à `Kazé` pour ses nombreux softs utiles dont :
