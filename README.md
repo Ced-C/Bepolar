@@ -37,7 +37,7 @@ Pour ceux qui ne peuvent vivre sans VIM, et qui ne souhaitent pas programmer leu
 
 
 ## ⌨ Disposition
-### Classique — Couche 0
+### Classique — Niveau 1
 La disposition Bépolar est présentée ci-dessous :
 
 ![disposition bepolar](img/bepolar_Default.svg)
@@ -46,7 +46,7 @@ Légende:
 - En rouge les touches « mortes », il faut les frapper puis enchainer avec un autre caratères pour voir leur effet
 - En vert le résultat de la touche morte lafayette combiné avec le caractère sur la touche courante. 
 
-### Touche morte — Couche 3
+### Touche morte — Niveau 3
 La touche morte `*` (en rouge sur le layout) donne accès au charactères en vert :
 - Tous les accents communs en français (aigüe, grave, circonflexe)
 - Certaine diacritique usuelle en langue européenne `ç ñ`
@@ -72,7 +72,7 @@ L’utilisation de la touche morte pour les accents n’est peut-être pas intui
 *In fine*, grâce aux touches classiques, (niveau 1), la touche shift/maj (niveau 2), et la touche morte `*` (niveau 3), l’ensemble des symboles nécessaires à taper un Français correct sont accessibles.
 Il est en outre possible d’écrire correctement et confortablement Français et en anglais. Dans une moindre ergonomie, l’espagnol, l’allemand et l’espéranto sont égallement accéssible.
 
-### Alt Gr. — niveau 5
+### Alt Gr. — Niveau 5
 La couche Alt. Gr est utilisé pour faciliter la programmation informatique en rendant accessible l’ensemble des symboles utilisé pour coder.
 
 ![disposition bepolar AltGr](img/bepolar_AltGr.svg)
@@ -92,17 +92,6 @@ Les pilotes pour Linux, Mac et Windows sont disponibles dans le dossier `dist`.
 Les pilotes sont générés via le script [Kalamine](https://github.com/fabi1cazenave/kalamine). Je mets à disposition la dispo pour tous les systèmes d’exploitation, mais **seule la version linux est testée** de mon côté.
 
 ### Sous Linux
-#### Méthode simple | Wayland
-La façon la plus simple d’installer Bépolar est de coller les commandes suivantes dans un terminal.
-⚠ Ne fonctionne que sous wayland
-```bash
-path=$(dirname "$0")
-
-wget http://github.com/Ced-C/Bepolar/archive/master.tar.gz -O /dev/stdout -P $path | tar -zxf -
-rsync -av $path/Bepolar-master/xkb/ ~/.config/xkb 
-chown $USER:$USER -R ~/.config/xkb
-```
-Il faut ensuite se déconnecter/reconnecter pour que le système voit la nouvelle disposition dans les paramètres clavier.
 
 #### Méthode simple | Wayland / X11
 La façon la plus simple d’installer Bépolar est de faire
@@ -110,7 +99,10 @@ La façon la plus simple d’installer Bépolar est de faire
 wget https://github.com/Ced-C/Bepolar/blob/master/dist/bepolar.xkb_custom
 sudo cp bepolar.xkb_custom /usr/share/X11/xkb/symbols/custom
 ```
-Vous pouvez ensuite aller dans les paramètres de votre pour ajouter la disposition qui se nommera `custom / A user-defined custom layout`
+
+Il faut ensuite se déconnecter et se **reconecter à sa session** pour que le système voit la nouvelle disposition dans les paramètres clavier. Elle ne sera pas dans Français, mais dans custom et sera nommée `custom / A user-defined custom layout`.
+
+Pour avoir la disposition d’installée sous son vrai nom, il faut passer par la méthode avancée.  
 
 #### Méthode avancée — compilation depuis les sources
 Installer Kalamine  :
