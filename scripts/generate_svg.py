@@ -151,16 +151,17 @@ def svg(keymap, context='Default', template_path='x-keyboard.svg', output_path='
             sub_g.append(etree.fromstring( keycap_layout(keymap[key_name], context) ))
     svg.write(output_path)
     return svg
+...
 
 
 
 
+path = ''
 
-path = 'configFiles/Clavier/Bepolar/img/'
-
-with open(path+'../dist/bepolar.json') as f:
+with open(path+'dist/bepolar.json') as f:
     LAYOUT = json.load(f)
 
+path = 'img/'
 keymap = get_layout(LAYOUT)
 for context in ['Default', 'AltGr', 'DeadKey']:
     output = f'{path}bepolar_{context}.svg'

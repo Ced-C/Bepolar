@@ -20,7 +20,7 @@ sudo cp $path/../xkb/symbols/fr         $path_config/symbols/fr
 read -p 'Do you want to set up Bépolar as the default layout for the login screen (y/n) ' isDefault
 if [[ "$isDefault" == 'y' ]]
 then
-sudo sed -i "s/\(XKBVARIANT *= *\).*/\1\"bepolar\"/" /etc/default/keyboard$
+sudo sed -i "s/\(XKBVARIANT *= *\).*/\1\"bepolar\"/" /etc/default/keyboard
 sudo sed -i "s/\(XKBLAYOUT= *= *\).*/\1\"fr\"/" /etc/default/keyboard
 echo Bépolar set as default Keyboard layout
 fi
