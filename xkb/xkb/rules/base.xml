@@ -3428,14 +3428,14 @@
         </variant>
         <variant>
           <configItem>
-            <name>bepolar</name>
-            <description>French (Bépolar)</description>
+            <name>bpolar</name>
+            <description>French (Bépolar) :-(</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>bpolar</name>
-            <description>French (Bépolar) :-(</description>
+            <name>bepolar</name>
+            <description>French (Bépolar)</description>
           </configItem>
         </variant>
       </variantList>

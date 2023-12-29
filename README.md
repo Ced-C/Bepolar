@@ -1,59 +1,86 @@
 Bépolar
 ================================================================================
 
-Dérivé de BÉPO, Bépolar est une disposition clavier s’appuyant sur des mécanismes modernes afin d’améliorer le confort de frappe.
 
-## 📑 Cahier des Charges
+## TL;DR
 
+Dérivé de BÉPO, Bépolar est une disposition clavier s’appuyant sur des mécanismes modernes afin d’améliorer le confort de frappe. Les mécanismes utilisés en font un candidat plus confortable que BÉPO en Français, et meilleur que BÉPO pour l’anglais et la programmation avec sa couche AltGr dédiée au développement.
+
+
+## Pourquoi une nouvelle disposition ?
+
+### Rationale
+BÉPO se base sur la méthode Dvorak. Cela veut dire plusieurs choses :
+
+1. La disposition a été développée pour écrire principalement en **Français**. Aujourd’hui, l’anglais s’est énormément développé et est de plus en plus utilisé, que ce soit pour des Anglicismes, ou tout simplement pour écrire à l’international. Écrire en BÉPO est fastidieux, notamment à cause de la position du `W` qui est très excentré. De même certains symboles de programmation ont des caractères très excentrés comme le `$`, ce qui est fastidieux pour coder dans certains langages.
+
+2. Pour écrire du Français correct, nous avons besoin de bien des diacritiques sur des lettres `é è ù û à â ô ç` pour ne citer que les plus courants en français. Sur des machines à écrire, il n’y a pas le choix, il faut impérativement utiliser plus de touches pour permettre une bonne typographie (majuscules accentuées, espace insécable, guillemets à la française, _etc_.). Le fait d’avoir plus de touches rend nécessairement les touches les plus éloignées mois accessible. Dvorak proposait d’excentrer les touches les moins utilisée. Le problème de cette approche, c’est que les touches les moins utilisée sont mise sur les positions les plus difficiles. Ainsi il est bien plus fréquent de faire des fautes de frappe sur ces touches et l’apprentissage de la dactylographie est plus long.
+
+Il faut donc changer d’approche ! Ne plus aller chercher les touches loin avec les doigts, mais plutôt les amener sous les doigts —passer d’un paradigme _finger-to-caps_ à _caps-to-finger_.
+
+Avec ce nouveau paradigme, on ouvre beaucoup de possibilités, mais **apprendre une nouvelle disposition, c’est long et fastidieux**. C’est pourquoi j’ai conçu Bépolar, une disposition clavier le plus proche possible de BÉPO mais qui évites les soucis mentionnés en agençant toutes les lettres dans la zone confortable, le pavé de 30 touches (3 colonnes × 5 touches × 2 mains).
+
+### 📑 Cahier des Charges
+Pour ce faire, voici les contraintes que je me suis données.
 * Le moins de changement possible par rapport à BÉPO
 * Toutes les lettres sont situées sur le pavé des 30 (3x5x2) touches principales du clavier
-* Les accents et autres diacritiques les plus communs via une touche morte de type [Lafayette](https://qwerty-lafayette.org/)
+* Les accents et autres diacritiques les plus communs via une touche morte de type [Lafayette](https://qwerty-lafayette.org/). On y mettera aussi quelques symboles typographiques utilisé en français.
 * Les chiffres accessibles en direct
 * Une couche Alt dédiée à la programmation
 
-Cette disposition se veut le meilleur compromis pour ceux qui ont déjà appris le BÉPO et ne veulent pas investir dans une nouvelle disposition. Elle permet de rester proche du BÉPO tout en s’éloignant des contraintes Dvorak issue des machines à écrire (alternance des mains, éparpillement des lettres accentuées au-delà des 30 touches, *etc.*).
+Cette disposition se veut le meilleur compromis pour ceux qui ont déjà appris le BÉPO et ne veulent pas investir dans une nouvelle disposition. Elle permet de rester proche du BÉPO tout en s’éloignant des contraintes Dvorak issue des machines à écrires.
 
 Pour ceux ne connaissant pas BÉPO, je conseille plutôt de passer sur une disposition telle que [Ergo-L](https://ergol.org/) plus optimisée que Bépolar, mais requérant un apprentissage long.
 
-Pour ceux qui ne peuvent vivre sans VIM, [QWERTY-Lafayette](https://qwerty-lafayette.org/) est un bon compromis.
+Pour ceux qui ne peuvent vivre sans VIM, et qui ne souhaitent pas programmer leur clavier, [QWERTY-Lafayette](https://qwerty-lafayette.org/) est un bon compromis. Un autre projet est en cours afin de pouvoir utiliser Bépolar et vim confortablement (accès aux flèches directionnelles sur `[HJKL]`) : [Girondin](https://github.com/Ced-C/Girondin)
 
 
 
 ## ⌨ Disposition
 ### Classique — Couche 0
-La disposition Bépolar est présenté ci-dessous :
+La disposition Bépolar est présentée ci-dessous :
 
-![disposition bepolar](img/bepolar.png)
+![disposition bepolar](img/bepolar_Default.svg)
+Légende:
+- En noir la touche frappé
+- En rouge les touches « mortes », il faut les frapper puis enchainer avec un autre caratères pour voir leur effet
+- En vert le résultat de la touche morte lafayette combiné avec le caractère sur la touche courante. 
+
 ### Touche morte — Couche 3
-La touche morte `*` donne accès à :
+La touche morte `*` (en rouge sur le layout) donne accès au charactères en vert :
 - Tous les accents communs en français (aigüe, grave, circonflexe)
-- Certaine diacritique usuelle en langue européenne (ç, ñ)
-- D’autres symboles typographiques usuels tels que l’apostrophe typographique, les espaces insécables (fine ou non), les guillemets anglo-saxons, les points de suspensions, le point médian, *etc.*
-- Des symboles mathématiques tels que supérieur, inférieur, différent, multiplier, plus-ou-moins, pour-mille, *etc.*
+- Certaine diacritique usuelle en langue européenne `ç ñ`
+- Les ligatures les plus courantes `œ, æ, ß`
+- D’autres symboles typographiques usuels tels que l’apostrophe typographique, les espaces insécables (fine ou non), les guillemets anglo-saxons, les points de suspension, le point médian, *etc.*
+- Des symboles mathématiques tels que `≠ ≃ ± × ₀₋₉⁰⁻⁹` *etc.*
 L’ensemble des symboles accessibles sont ici présentés :
 
-![disposition bepolar touche morte](img/bepolar_dk.png)
+![disposition bepolar touche morte](img/bepolar_DeadKey.svg)
+
+⚠ Ce n’est pas très visible, mais touche morte suivi d’espace permet de faire l’appostrophe (typographique)
+
+
 #### Principe
 - La touche morte `*` suivie d’une voyelle (colonne du milieu ou *home row*) donne généralement cette dernière avec un accent grave (*i.e.* `à`, `ù`, `è`)
 - La touche morte `*` suivie de la touche au-dessus de cette voyelle (colonne haute) donne un accent circonflexe (*i.e.* `â`, `û`, `î`, `ô`). ⚠ Exception pour le `ê` qui est à la droite du `è`
 - La touche morte `*` suivie de `i` donne `é`
-- Deux appuis successif sur la touche morte `**` donne une touche morte trémas `*¨`. Pour faire un `ï` par exemple, il suffit de faire l’enchainement `**i` (soit trois touches, mais les mots à trémas sont rares).
+- Deux appuis successifs sur la touche morte `**` donne une touche morte trémas `*¨`. Pour faire un `ï` par exemple, il suffit de faire l’enchainement `**i` (soit trois touches, mais les mots à trémas sont rares).
 
 L’utilisation de la touche morte pour les accents n’est peut-être pas intuitive de prime abord, mais permet de placer l’ensemble des lettres sur les 30 touches, tout en favorisant l’apprentissage de la mémoire musculaire.
 
 
-*In fine*, grâce aux touches classiques, (niveau 0), la touche shift/maj (niveau 1), et la touche morte `*` (niveau 3), l’ensemble des symboles nécessaires à taper un français correct sont accessibles.
-Il est en outre possible d’écrire correctement en anglais, espagnol, Allemand et espéranto.
+*In fine*, grâce aux touches classiques, (niveau 1), la touche shift/maj (niveau 2), et la touche morte `*` (niveau 3), l’ensemble des symboles nécessaires à taper un Français correct sont accessibles.
+Il est en outre possible d’écrire correctement et confortablement Français et en anglais. Dans une moindre ergonomie, l’espagnol, l’allemand et l’espéranto sont égallement accéssible.
 
-### Alt Gr. — Couche 2 et 4
+### Alt Gr. — niveau 5
 La couche Alt. Gr est utilisé pour faciliter la programmation informatique en rendant accessible l’ensemble des symboles utilisé pour coder.
 
-![disposition bepolar AltGr](img/bepolar_alt.png)
+![disposition bepolar AltGr](img/bepolar_AltGr.svg)
 
 ⚠ Cette couche n’est pas aussi mature que les autres et peut être amenée à évoluer davantage que la couche principale.
 
 ### La touche espace
-La touche espace est utiliser pour les symboles suivants :
+La touche espace est utilisée pour les symboles suivants :
 - L’espace classique : ` `
 - L’espace insécable fine (shift+espace) : ` `
 - L’apostrophe typographique (touche_morte+espace) : `’`
@@ -62,73 +89,64 @@ La touche espace est utiliser pour les symboles suivants :
 
 ## 🧩 Installation
 Les pilotes pour Linux, Mac et Windows sont disponibles dans le dossier `dist`.
-La dernière version de [Kalamine](https://github.com/fabi1cazenave/kalamine) est nécessaire pour générer la version actuelle ou une variante de Bépolar.
+Les pilotes sont générés via le script [Kalamine](https://github.com/fabi1cazenave/kalamine). Je mets à disposition la dispo pour tous les systèmes d’exploitation, mais **seule la version linux est testée** de mon côté.
 
-Pour installer Kalamine (impérativement **en mode root**) :
+### Sous Linux
+#### Méthode simple | Wayland
+La façon la plus simple d’installer Bépolar est de coller les commandes suivantes dans un terminal.
+⚠ Ne fonctionne que sous wayland
 ```bash
-sudo pip install kalamine # Yes, you *do* need root privileges
+path=$(dirname "$0")
+
+wget http://github.com/Ced-C/Bepolar/archive/master.tar.gz -O /dev/stdout -P $path | tar -zxf -
+rsync -av $path/Bepolar-master/xkb/ ~/.config/xkb 
+chown $USER:$USER -R ~/.config/xkb
+```
+Il faut ensuite se déconnecter/reconnecter pour que le système voit la nouvelle disposition dans les paramètres clavier.
+
+#### Méthode simple | Wayland / X11
+La façon la plus simple d’installer Bépolar est de faire
+```bash
+wget https://github.com/Ced-C/Bepolar/blob/master/dist/bepolar.xkb_custom
+sudo cp bepolar.xkb_custom /usr/share/X11/xkb/symbols/custom
+```
+Vous pouvez ensuite aller dans les paramètres de votre pour ajouter la disposition qui se nommera `custom / A user-defined custom layout`
+
+#### Méthode avancée — compilation depuis les sources
+Installer Kalamine  :
+```bash
+pip3 install kalamine --break-system-packages
 ```
 
 Pour générer les pilotes, télécharger le fichier `Bepolar.yml` du répertoire et faites un :
 ```bash
-kalamine Bepolar.yml
+kalamine Bépolar.yml
 ```
-Il est ensuite possible d’utiliser les fichiers générer pour installer les pilotes dans votre système.
-### Spécificité Linux :
-#### Installation rapide Ubuntu/Debian
-Pour installer rapidement la dispo sans ajouter de packets python le script quick_install peut être lancer pour cela faire : 
+
+Pour installer la disposition qui appraraitra dans la catégorie Fr/Bépolar en user-space
 ```bash
-git clone https://github.com/Ced-C/Bepolar
-cd Bepolar
-./scripts/quick_install.sh
+xkalamine install Bepolar.yml # insalle la dispo
 ```
-#### Installation depuis les sources
-Sous Linux Kalamine est capable d’installer et de supprimer des dispositions :
-#### Sous X11
+Pour installer la disposition qui appraraitra dans la catégorie Fr/Bépolar sur tout le systeme (root). Il faut alors installer kalamine via pyVenv puis
 ```bash
 sudo xkalamine install Bepolar.yml # insalle la dispo
-xkalamine apply Bepolar.yml # teste la dispo en locale
 ```
 
-#### Sous Wayland
-Il y a actuellement un bug connu sous kalamine qui l’empêche de bien fonctionner sous wayland. Pour y remédier :
-```bash
-xkbpath=/usr/share/X11/xkb
-# sauvegarde de la config actuelle
-sudo cp $xkbpath/rules/evdev.xml $xkbpath/rules/evdev.xml.bk
-sudo cp $xkbpath/rules/base.xml $xkbpath/rules/base.xml.bk
-sudo cp $xkbpath/symbols/fr $xkbpath/symbols/fr.bk
+Il faut ensuite se déconnecter et se **reconecter à sa session**.
 
-sudo xkalamine install Bepolar.yml
-# supprime les varibles qui posent problèmes pour wayland
-sudo python3 ./script/kalamine_clean.py
-# kalamine n’est plus capable de supprimer la disposition, mais, `sudo ./set_org_xkb.sh` permet de revenir comme avant si les étapes précédantes ont bien été suivies.
-```
-Il faut ensuite se déconnecter et se **reconecter à sa session**. 
-
-#### Bug sous Ubuntu/Gnome
-Je ne suis pas certain que cela afecte d’autres personnes, mais chez moi, sous Ubuntu 22.04 — Gnome 42.9, si une seule disposition avec la couche 1dk est instlallé, la couche AltGr ne foncitonne pas. 
-Par exemple, dans le screen suivant, Il faut que Bépolar soit impérativement en dernier pour que la couche AltGr fonctionne. 
-![disposition bepolar](img/Screenshot_layout_order.png)
-Dans le cas contraire, voici le comportement en fonction de la disposition :
-1. la touche AltGr affiche les charactères de la couche touche morte
-2. la touche AltGr affiche la couche alpha
-3. *idem*
-4. Fonctionne bien
-
-Pour y rémédier, je propose un deuxième fichier `Bepolar2.yml` qui ne sert qu’a installer une dispo supplémentaire pour avoir un comportement correct. Pour l’installer :
-```bash
-sudo xkalamine install Bepolar2.yml
-sudo python3 ./script/kalamine_clean.py
-```
-Il faut ensuite se déconnecter et se **reconecter à sa session**. 
+#### Bug sous Ubuntu/Gnome (section obsolète ?)
+Parfois, la couche AltGr ne fonctionne pas. Si cela vous arrive :
+1. télécharger `GNOME Tweaks`
+2. Dans la partie Keyboard & Mouse cliquer sur `Additional Layout Option`
+3. Trouver l’option `key to choose 5th level`
+4. Selectioner l’option `Right Alt Chooses 5th Level
 
 
 ## 💡 Faites votre propre disposition
 Si vous souhaitez modifier la disposition pour l’adapter à vos besoins, le fichier `Bepolar.yml` est lisible facilement et peut être modifié à la main avant d’utiliser kalamine pour générer vos propres pilotes.
 
 ## 🙏 Mention
-Un grand merci à `Kazé` pour ses nombreux softs utiles dont :
+Un _grand_ merci à `Kazé` pour ses nombreux softs utiles dont :
 - kalamine pour générer les pilotes
 - X-keyboard pour générer les images de layout
 
@@ -137,4 +155,4 @@ Et son implication dans de nombreux projet (BÉPO, QWERTY-lafayette)
 De même, merci à :
 - `Nuclear Squid` pour ses explications, et son [serveur discord](https://discord.gg/RH34GjQEgC) qui m’ont permis de me lancer dans le sujet
 - `Lobre` pour ses retours éclairants
-- `Aeshar` & `Brab` et leur version custom `BMP` sur laquelle `Bépolar` est issue.
+- `Aeshar` & `Brab` et leur version custom `BMP` de laquelle `Bépolar` est issue.

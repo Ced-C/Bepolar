@@ -12,4 +12,9 @@ xkalamine install Bépolar.yml
 # make version for ditribution `dist` directory
 kalamine $path/../Bépolar.yml
 
+# Save user-space for quick install
+rsync -av ~/.config/xkb $path/../xkb/
+
+# Get latest SVGs
 python3 $path/generate_svg.py
+
