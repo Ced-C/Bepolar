@@ -64,7 +64,7 @@ L’ensemble des symboles accessibles sont ici présentés :
 - La touche Typographique `*` suivie de la touche au-dessus de cette voyelle (colonne haute) donne un accent circonflexe (*i.e.* `â`, `û`, `î`, `ô`). ⚠ Exception pour le `ê` qui est à la droite du `è`
 - La touche Typographique `*` suivie de `i` donne `é` ce qui facilite l’enchainement `ée`
 - Deux appuis successifs sur la touche morte `**` donne une touche morte trémas `*¨`. Pour faire un `ï` par exemple, il suffit de faire l’enchainement `**i` (soit trois touches, mais les mots à trémas sont rares).
-- La touche Typographique `*` suivie d’un symbole / lettre ayant une variate courante donne cette variante : `*c` → `ç`, `*n` → `ñ`, `*s` → `ß`, `*=` → `≠`, _etc_.
+- La touche Typographique `*` suivie d’un symbole / lettre ayant une variate courante donne cette variante : `*c` → `ç`, `*n` → `ñ`, `*s` → `ß`, `*=` → `≠`, _etc_.
 L’utilisation de la touche Typographique pour les accents n’est peut-être pas intuitive de prime abord, mais permet de placer l’ensemble des lettres sur les 30 touches confortable du clavier, tout en favorisant l’apprentissage de la mémoire musculaire.
 
 *In fine*, grâce aux touches classiques, (niveau 1), la touche shift/maj (niveau 2), et la touche Typographique `*` (niveau 3), l’ensemble des symboles nécessaires à taper un Français correct sont accessibles.
