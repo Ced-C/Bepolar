@@ -18,7 +18,7 @@ BÉPO se base sur la méthode Dvorak. Cela veut dire plusieurs choses :
 
 Il faut donc changer d’approche ! Ne plus aller chercher les touches loin avec les doigts, mais plutôt les amener sous les doigts —passer d’un paradigme _finger-to-caps_ à _caps-to-finger_.
 
-Avec ce nouveau paradigme, on ouvre beaucoup de possibilités, mais **apprendre une nouvelle disposition, c’est long et fastidieux**. C’est pourquoi j’ai conçu Bépolar, une disposition clavier le plus proche possible de BÉPO mais qui évites les soucis mentionnés en agençant toutes les lettres dans la zone confortable, le pavé de 30 touches (3 colonnes × 5 touches × 2 mains).
+Avec ce nouveau paradigme, on ouvre beaucoup de possibilités, mais **apprendre une nouvelle disposition, c’est long et fastidieux**. C’est pourquoi j’ai conçu Bépolar, une disposition clavier le plus proche possible de BÉPO mais qui évites les soucis mentionnés en agençant toutes les lettres dans la zone confortable, le pavé de 30 touches (3 colonnes × 5 touches × 2 mains). La disposition étant très proche de BÉPO, elle s’apprend _très_ rapidement.
 
 ### 📑 Cahier des Charges
 Pour ce faire, voici les contraintes que je me suis données.
@@ -30,28 +30,28 @@ Pour ce faire, voici les contraintes que je me suis données.
 
 Cette disposition se veut le meilleur compromis pour ceux qui ont déjà appris le BÉPO et ne veulent pas investir dans une nouvelle disposition. Elle permet de rester proche du BÉPO tout en s’éloignant des contraintes Dvorak issue des machines à écrires.
 
-Pour ceux ne connaissant pas BÉPO, je conseille plutôt de passer sur une disposition telle que [Ergo-L](https://ergol.org/) plus optimisée que Bépolar, mais requérant un apprentissage long.
+Pour ceux ne pratiquant pas BÉPO, je conseillerais plutôt de passer sur une disposition telle que [Ergo-L](https://ergol.org/) plus optimisée que Bépolar, mais requérant un apprentissage long.
 
 Pour ceux qui ne peuvent vivre sans VIM, et qui ne souhaitent pas programmer leur clavier, [QWERTY-Lafayette](https://qwerty-lafayette.org/) est un bon compromis. Un autre projet est en cours afin de pouvoir utiliser Bépolar et vim confortablement (accès aux flèches directionnelles sur `[HJKL]`) : [Girondin](https://github.com/Ced-C/Girondin)
 
 
 
 ## ⌨ Disposition
-### Classique — Niveau 1
+### Classique — Niveau 1 — Couche Alpha
 La disposition Bépolar est présentée ci-dessous :
 
 ![disposition bepolar](img/bepolar_Default.svg)
 Légende:
 - En noir la touche frappé
 - En rouge les touches « mortes », il faut les frapper puis enchainer avec un autre caratères pour voir leur effet
-- En vert le résultat de la touche morte lafayette combiné avec le caractère sur la touche courante. 
+- En vert le résultat de la touche typographique (en forme d’étoile) combiné avec le caractère sur la touche courante. 
 
-### Touche morte — Niveau 3
-La touche morte `*` (en rouge sur le layout) donne accès au charactères en vert :
+### Touche Typographique — Niveau 3 — Techiquement un _dead alt gr_
+La touche Typographique `*` (en rouge sur le layout) donne accès au charactères en vert :
 - Tous les accents communs en français (aigüe, grave, circonflexe)
 - Certaine diacritique usuelle en langue européenne `ç ñ`
 - Les ligatures les plus courantes `œ, æ, ß`
-- D’autres symboles typographiques usuels tels que l’apostrophe typographique, les espaces insécables (fine ou non), les guillemets anglo-saxons, les points de suspension, le point médian, *etc.*
+- D’autres symboles typographiques usuels tels que l’apostrophe typographique, les espaces insécables (fine ou non), les guillemets anglo-saxons, les points de suspension, le point médian (·), *etc.*
 - Des symboles mathématiques tels que `≠ ≃ ± × ₀₋₉⁰⁻⁹` *etc.*
 L’ensemble des symboles accessibles sont ici présentés :
 
@@ -59,21 +59,19 @@ L’ensemble des symboles accessibles sont ici présentés :
 
 ⚠ Ce n’est pas très visible, mais touche morte suivi d’espace permet de faire l’appostrophe (typographique)
 
-
 #### Principe
-- La touche morte `*` suivie d’une voyelle (colonne du milieu ou *home row*) donne généralement cette dernière avec un accent grave (*i.e.* `à`, `ù`, `è`)
-- La touche morte `*` suivie de la touche au-dessus de cette voyelle (colonne haute) donne un accent circonflexe (*i.e.* `â`, `û`, `î`, `ô`). ⚠ Exception pour le `ê` qui est à la droite du `è`
-- La touche morte `*` suivie de `i` donne `é`
+- La touche Typographique `*` suivie d’une voyelle (colonne du milieu ou *home row*) donne généralement cette dernière avec un accent grave (*i.e.* `à`, `ù`, `è`)
+- La touche Typographique `*` suivie de la touche au-dessus de cette voyelle (colonne haute) donne un accent circonflexe (*i.e.* `â`, `û`, `î`, `ô`). ⚠ Exception pour le `ê` qui est à la droite du `è`
+- La touche Typographique `*` suivie de `i` donne `é` ce qui facilite l’enchainement `ée`
 - Deux appuis successifs sur la touche morte `**` donne une touche morte trémas `*¨`. Pour faire un `ï` par exemple, il suffit de faire l’enchainement `**i` (soit trois touches, mais les mots à trémas sont rares).
+- La touche Typographique `*` suivie d’un symbole / lettre ayant une variate courante donne cette variante : `*c` → `ç`, `*n` → `ñ`, `*s` → `ß`, `*=` → `≠`, _etc_.
+L’utilisation de la touche Typographique pour les accents n’est peut-être pas intuitive de prime abord, mais permet de placer l’ensemble des lettres sur les 30 touches confortable du clavier, tout en favorisant l’apprentissage de la mémoire musculaire.
 
-L’utilisation de la touche morte pour les accents n’est peut-être pas intuitive de prime abord, mais permet de placer l’ensemble des lettres sur les 30 touches, tout en favorisant l’apprentissage de la mémoire musculaire.
+*In fine*, grâce aux touches classiques, (niveau 1), la touche shift/maj (niveau 2), et la touche Typographique `*` (niveau 3), l’ensemble des symboles nécessaires à taper un Français correct sont accessibles.
+Il est en outre possible d’écrire correctement et confortablement Français et en anglais ; et, dans une moindre mesure, l’espagnol, l’allemand et l’espéranto.
 
-
-*In fine*, grâce aux touches classiques, (niveau 1), la touche shift/maj (niveau 2), et la touche morte `*` (niveau 3), l’ensemble des symboles nécessaires à taper un Français correct sont accessibles.
-Il est en outre possible d’écrire correctement et confortablement Français et en anglais. Dans une moindre ergonomie, l’espagnol, l’allemand et l’espéranto sont égallement accéssible.
-
-### Alt Gr. — Niveau 5
-La couche Alt. Gr est utilisé pour faciliter la programmation informatique en rendant accessible l’ensemble des symboles utilisé pour coder.
+### Alt Gr. — Niveau 5 — ISO level 5
+La couche Alt. Gr est utilisé pour faciliter la programmation informatique en rendant accessible l’ensemble des symboles utilisé pour coder. Cette couche est partagée entre les projets Bépolar, [Ergo-L](https://ergol.org/) et [QWERTY-Lafayette](https://qwerty-lafayette.org/). Elle a été pensée pour les développeurs en mettant les symboles les plus courants aux endroits les plus accessibles. 
 
 ![disposition bepolar AltGr](img/bepolar_AltGr.svg)
 
