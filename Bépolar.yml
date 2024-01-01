@@ -6,7 +6,7 @@ description: French (Bépolar)
 url: https://github.com/Ced-C/Bepolar
 author : Cèd’C
 geometry: ERGO
-version: 0.5.2
+version: 0.5.3
 
 base: |
   ╭╌╌╌╌╌┰─────┬─────┬─────┬─────┬─────┰─────┬─────┬─────┬─────┬─────┰╌╌╌╌╌┬╌╌╌╌╌╮
@@ -44,4 +44,4 @@ spacebar:
   altgr:       "\u0020"  # SPACE
   altgr_shift: "\u00a0"  # NO-BREAK SPACE
   1dk:         "\u2019"  # RIGHT SINGLE QUOTATION MARK
-  1dk_shift:   "\u2019"  # RIGHT SINGLE QUOTATION MARK
+  1dk_shift:   "\u2018"  # Left SINGLE QUOTATION MARK
