@@ -66,7 +66,7 @@ L’ensemble des symboles accessibles sont ici présentés :
 
 ![disposition bepolar touche morte](img/bepolar_DeadKey.svg)
 
-⚠ Ce n’est pas très visible, mais touche morte suivi d’espace permet de faire l’appostrophe (typographique)
+> ⚠ Ce n’est pas très visible, mais touche morte suivi d’espace permet de faire l’appostrophe (typographique)
 
 #### Principe
 - La touche Typographique `★` suivie d’une voyelle (colonne du milieu ou *home row*) donne généralement cette dernière avec un accent grave (*i.e.* `à`, `ù`, `è`)
@@ -94,9 +94,10 @@ Cette couche est partagée entre les projets Bépolar, [Ergo-L](https://ergol.or
 La touche espace est utilisée pour les symboles suivants :
 - L’espace classique : ` `
 - L’espace insécable fine (shift+espace) : ` `
-- L’apostrophe typographique (★+espace) : `’`
-- L’underscore (AltGr+espace) : `_`
 - L’espace insécable (AltGr+shift+espace) : ` `
+- L’apostrophe typographique (★+espace) : `’`
+
+> **NB :** Contrairement à bépo, l’underscore `_` n’est pas en AltGr+space, mais en ★+x. Cela permet d’enchainer les symboles de programation en couche Alt Gr, et de permettre d’enchainer du texte facilement en Snake_case. 
 
 ## 🧩 Installation
 Les pilotes pour Linux, Mac et Windows sont disponibles dans le dossier `dist`.
