@@ -125,7 +125,8 @@ wget https://github.com/Ced-C/Bepolar/blob/master/Bépolar.yml
 
 Installer Kalamine  :
 ```bash
-pip3 install kalamine --break-system-packages
+pip3 install pipx # si nécéssaire, pipx est une amélioration de pip
+pipx install kalamine
 ```
 
 ```bash
