@@ -56,7 +56,7 @@ Légende:
 - En vert le résultat de la touche typographique (en forme d’étoile) combiné avec le caractère sur la touche courante. 
 
 ### Touche Typographique — Niveau 5 — Techiquement un *iso_level_5_latch*, un cousin d’AltGr
-La touche Typographique `★` (en rouge sur le layout) donne accès au charactères en vert :
+La touche Typographique `★` (en rouge sur le layout) donne accès aux charactères en vert :
 - Tous les accents communs en français (aigüe, grave, circonflexe)
 - Certaine diacritique usuelle en langue européenne `ç ñ`
 - Les ligatures les plus courantes `œ, æ, ß`
@@ -125,7 +125,8 @@ wget https://github.com/Ced-C/Bepolar/blob/master/Bépolar.yml
 
 Installer Kalamine  :
 ```bash
-pip3 install kalamine --break-system-packages
+pip3 install pipx # si nécéssaire, pipx est une amélioration de pip
+pipx install kalamine
 ```
 
 ```bash
