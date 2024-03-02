@@ -9,6 +9,8 @@ La disposition est plus confortable que BÉPO en Français, et meilleur que BÉP
 
 C’est un bon moyen, pour un bépoète, de tester l’approche 1DFH qui est l’essence d’[Ergo-L](https://ergol.org/) avec un temps d’apprentissage record.
 
+👉 [Apprendre / tester](https://ergol.org/lafayette/#b%C3%A9polar)
+
 
 ## Pourquoi une nouvelle disposition ?
 BÉPO m’a permis de découvrir le monde de l’ergonomie clavier et je l’en remercie. Depuis sa sortie, d’autres disposition (bien) plus optimisées ont vu le jour. 
