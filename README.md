@@ -54,7 +54,7 @@ La disposition Bépolar est présentée ci-dessous :
 ![disposition bepolar](img/bepolar_Default.svg)
 Légende:
 - En noir la touche frappé
-- En rouge les touches « mortes », il faut les frapper puis enchainer avec un autre caratères pour voir leur effet
+- En rouge les touches « mortes », il faut les frapper puis enchainer avec un autre caractères pour voir leur effet
 - En vert le résultat de la touche typographique (en forme d’étoile) combiné avec le caractère sur la touche courante. 
 
 ### Touche Typographique — Niveau 5 — Techiquement un *iso_level_5_latch*, un cousin d’AltGr
@@ -66,9 +66,9 @@ La touche Typographique `★` (en rouge sur le layout) donne accès aux charact�
 - Des symboles mathématiques tels que `≠ ≃ ± × ₀₋₉⁰⁻⁹` *etc.*
 L’ensemble des symboles accessibles sont ici présentés :
 
-![disposition bepolar touche morte](img/bepolar_DeadKey.svg)
+![disposition bépolar touche morte](img/bepolar_DeadKey.svg)
 
-> ⚠ Ce n’est pas très visible, mais touche morte suivi d’espace permet de faire l’appostrophe (typographique)
+> ⚠ Ce n’est pas très visible, mais touche morte suivi d’espace permet de faire l’apostrophe (typographique)
 
 #### Principe
 - La touche Typographique `★` suivie d’une voyelle (colonne du milieu ou *home row*) donne généralement cette dernière avec un accent grave (*i.e.* `à`, `ù`, `è`)
@@ -99,10 +99,10 @@ La touche espace est utilisée pour les symboles suivants :
 - L’espace insécable (AltGr+shift+espace) : ` `
 - L’apostrophe typographique (★+espace) : `’`
 
-> **NB :** Contrairement à bépo, l’underscore `_` n’est pas en AltGr+space, mais en ★+x. Cela permet d’enchainer les symboles de programation en couche Alt Gr, et de permettre d’enchainer du texte facilement en Snake_case. 
+> **NB :** Contrairement à bépo, l’underscore `_` n’est pas en AltGr+space, mais en ★+x. Cela permet d’enchainer les symboles de programmation en couche Alt Gr, et de permettre d’enchainer du texte facilement en Snake_case. 
 
 ## 🧩 Installation
-Les pilotes pour Linux, Mac et Windows sont disponibles dans le dossier `dist`.
+Les pilotes pour [Linux](#sous-linux), [Mac](#sous-mac) et [Windows](#sous-windows) sont disponibles dans le dossier `dist`.
 Les pilotes sont générés via le script [Kalamine](https://github.com/fabi1cazenave/kalamine). Je mets à disposition la disposition pour tous les systèmes d’exploitation, mais **la version linux est la plus testée**.
 
 ### Sous Linux
@@ -114,7 +114,7 @@ wget https://github.com/Ced-C/Bepolar/blob/master/dist/bepolar.xkb_custom
 sudo cp bepolar.xkb_custom /usr/share/X11/xkb/symbols/custom
 ```
 
-En fonction de votre environement de bureau, il faut ensuite se déconnecter et se **reconecter à sa session** pour que le système voit la nouvelle disposition dans les paramètres clavier. Elle ne sera pas dans Français, mais dans custom et sera nommée `custom / A user-defined custom layout`.
+En fonction de votre environnement de bureau, il faut ensuite se déconnecter et se **reconnecter à sa session** pour que le système voit la nouvelle disposition dans les paramètres clavier. Elle ne sera pas dans Français, mais dans custom et sera nommée `custom / A user-defined custom layout`.
 
 Pour avoir la disposition d’installée sous son vrai nom, il faut passer par la méthode avancée.  
 
@@ -140,13 +140,24 @@ xkalamine install Bépolar.yml
 
 ```
 
-Pour installer la disposition qui appraraitra dans la catégorie Fr/Bépolar sur tout le systeme (root). Il faut alors installer kalamine via pyVenv puis
+Pour installer la disposition qui appraraitra dans la catégorie Fr/Bépolar sur tout le système (root). Il faut alors installer kalamine via pyVenv puis
 ```bash
 sudo xkalamine install Bépolar.yml
 ```
 
 Il peut être nécessaire de se déconnecter et se **reconecter à sa session**.
 
+### Sous Mac
+Il suffit de copier le fichier [bepolar.keylayout](dist/bepolar.keylayout) dans le dossier `/Library/Keyboard Layouts` et **relancer la session**. La disposition de clavier est disponible dans les préférences « Langue et Texte », onglet « Méthodes de saisie ».
+On peut aussi l’enregistrer dans `~/Library/Keyboard Layouts` (pour le seul utilisateur courant), mais la disposition ne sera pas active et disponible au login.
+Il est possible (et recommandé) d’utiliser Karabiner pour inverser les touches ⌘ Command et ⌥ Option à droite, afin d’accéder plus facilement à la couche de symboles.
+
+### Sous Windows
+Si vous avez les droits d’administration sur votre poste Windows, utiliser l’installeur (`setup.exe`) disponible dans [Bépolar.zip](dist/bepolar-0.6.0-win.zip)
+Exécuter l’installeur et relancer la session. La disposition de clavier apparaît dans la barre de langues (indicateur de la barre des tâches).
+
+Si vous n’avez pas les droits d’administrations, une version portable est disponible : [Bépolar.ahk](dist/bepolar.ahk)
+Après lancement, un indicateur apparaît dans la barre des tâches. Le pilote peut être activé / désactivé avec le raccourci Alt‑AltGr.
 
 ## 💡 Faites votre propre disposition
 Si vous souhaitez modifier la disposition pour l’adapter à vos besoins, le fichier `Bepolar.yml` est lisible facilement et peut être modifié à la main avant d’utiliser kalamine pour générer vos propres pilotes.
