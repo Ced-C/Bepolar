@@ -17,13 +17,13 @@ BÉPO m’a permis de découvrir le monde de l’ergonomie clavier et je l’en 
 
 Mais
 
-**Apprendre une nouvelle disposition, c’est long et fastidieux**. Bépolar se veut le plus proche possible de BÉPO tout en évitant son principal problème : les caractères `M Z Ç W` sont ~~très~~ trop excentrés.
+**Apprendre une nouvelle disposition, c’est long et fastidieux**. Bépolar se veut le plus proche possible de BÉPO tout en évitant son principal problème : les caractères `M Z Ç W` sont ~~très~~ trop excentrés, ce qui est la principale cause de TMS documenté.
 
 Quelques défaut de BÉPO corrigés par Bépolar :
 
-1. L’anglais — La disposition a été développée pour écrire principalement en **Français**. Aujourd’hui, l’anglais s’est énormément développé et est de plus en plus utilisé, que ce soit pour des Anglicismes, ou tout simplement pour écrire à l’international. Écrire en anglais en BÉPO est fastidieux, notamment à cause de la position du `W` qui est très excentré. 
+1. L’anglais — La disposition BÉPO a été développée pour écrire principalement en **Français**. Aujourd’hui, l’anglais s’est énormément développé et est de plus en plus utilisé, que ce soit pour des Anglicismes, ou tout simplement pour écrire à l’international. Écrire en anglais en BÉPO est extrêmement fastidieux, notamment à cause de la position du `W`. 
 2. La précision — Pour écrire du Français correct, nous avons besoin de bien des diacritiques sur des lettres `é è ù û à â ô ç` pour ne citer que les plus courants en français. Sur des machines à écrire, il n’y a pas le choix, il faut impérativement utiliser plus de touches pour permettre une bonne typographie (majuscules accentuées, espace insécable, guillemets à la Française, _etc_.). Le fait d’avoir plus de touches rend nécessairement les touches les plus éloignées moins confortable (et moins précises). Dvorak proposait d’excentrer les touches les moins utilisée. Le problème de cette approche, c’est que les touches les moins utilisées sont misent sur les positions les plus difficiles. Ainsi il est bien plus fréquent de faire des fautes de frappe sur ces touches et l’apprentissage de la dactylographie est plus long.
-3. L’auriculaire droit — `M` est une lettre fréquemment doublée, la mettre en extention sur un doigt faible n’est pas judicieux. 
+3. L’auriculaire droit — `M` est une lettre fréquemment doublée, la mettre en extension sur un doigt faible n’est pas judicieux. 
 4. La programmation — Certains symboles de programmation ont des caractères très excentrés comme le `$`, ce qui est fastidieux pour coder dans certains langages.
 
 Tous les problèmes mentionnés ont la même origine, l’utilisation de touches excentrées. Il faut donc changer d’approche ; Ne plus aller chercher les touches loin avec les doigts, mais plutôt les amener sous les doigts —passer d’un paradigme _finger-to-caps_ à _caps-to-finger_!
@@ -34,7 +34,7 @@ La disposition étant très proche de BÉPO, elle s’apprend _très_ rapidement
 
 Pour ceux ne pratiquant pas BÉPO, je conseillerais plutôt de passer sur une disposition telle que [Ergo-L](https://ergol.org/) plus optimisée que Bépolar, mais requérant un apprentissage long.
 
-Pour ceux qui ne peuvent vivre sans VIM, et qui ne souhaitent pas programmer leur clavier, [QWERTY-Lafayette](https://qwerty-lafayette.org/) est un bon compromis.
+Pour ceux qui ne peuvent vivre sans VIM, *et* qui ne souhaitent pas programmer leur clavier (via QMK ou un logiciel comme [Kanata](https://github.com/jtroo/kanata)) [QWERTY-Lafayette](https://qwerty-lafayette.org/) est un bon compromis.
 
 
 ### 📑 Cahier des Charges
@@ -54,11 +54,11 @@ La disposition Bépolar est présentée ci-dessous :
 ![disposition bepolar](img/bepolar_Default.svg)
 Légende:
 - En noir la touche frappé
-- En rouge les touches « mortes », il faut les frapper puis enchainer avec un autre caractères pour voir leur effet
+- En rouge les touches « mortes », il faut les frapper puis enchaîner avec un autre caractères pour voir leur effet (comme le `^` en AZERTY.
 - En vert le résultat de la touche typographique (en forme d’étoile) combiné avec le caractère sur la touche courante. 
 
 ### Touche Typographique — Niveau 5 — Techiquement un *iso_level_5_latch*, un cousin d’AltGr
-La touche Typographique `★` (en rouge sur le layout) donne accès aux charactères en vert :
+La touche Typographique `★` (en rouge sur le layout) donne accès aux caractères en vert :
 - Tous les accents communs en français (aigüe, grave, circonflexe)
 - Certaine diacritique usuelle en langue européenne `ç ñ`
 - Les ligatures les plus courantes `œ, æ, ß`
@@ -90,8 +90,6 @@ Cette couche est partagée entre les projets Bépolar, [Ergo-L](https://ergol.or
 
 ![disposition bepolar AltGr](img/bepolar_AltGr.svg)
 
-⚠ Cette couche n’est pas aussi mature que les autres et peut être amenée à évoluer davantage que la couche principale.
-
 ### La touche espace
 La touche espace est utilisée pour les symboles suivants :
 - L’espace classique : ` `
@@ -99,7 +97,7 @@ La touche espace est utilisée pour les symboles suivants :
 - L’espace insécable (AltGr+shift+espace) : ` `
 - L’apostrophe typographique (★+espace) : `’`
 
-> **NB :** Contrairement à bépo, l’underscore `_` n’est pas en AltGr+space, mais en ★+x. Cela permet d’enchainer les symboles de programmation en couche Alt Gr, et de permettre d’enchainer du texte facilement en Snake_case. 
+> **NB :** Contrairement à bépo, l’underscore `_` n’est pas en AltGr+space, mais en ★+x (ou AltGr-.). Cela permet d’enchaîner espaces et symboles de programmation en couche AltGr, et de permettre d’enchaîner du texte facilement en snake_case. 
 
 ## 🧩 Installation
 Les pilotes pour [Linux](#sous-linux), [Mac](#sous-mac) et [Windows](#sous-windows) sont disponibles dans le dossier `dist`.
@@ -145,7 +143,7 @@ Pour installer la disposition qui appraraitra dans la catégorie Fr/Bépolar sur
 sudo xkalamine install Bépolar.yml
 ```
 
-Il peut être nécessaire de se déconnecter et se **reconecter à sa session**.
+Il peut être nécessaire de se déconnecter et se **reconnecter à sa session**.
 
 ### Sous Mac
 Il suffit de copier le fichier [bepolar.keylayout](dist/bepolar.keylayout) dans le dossier `/Library/Keyboard Layouts` et **relancer la session**. La disposition de clavier est disponible dans les préférences « Langue et Texte », onglet « Méthodes de saisie ».
