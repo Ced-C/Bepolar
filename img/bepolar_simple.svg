@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" platform="gnu" viewBox="0 0 900 300" class="iso intlBackslash altgr" theme="">
+<svg xmlns="http://www.w3.org/2000/svg" platform="gnu" viewBox="0 0 900 300" class="iso intlBackslash odk" theme="reach">
 
   <style>
     :root { color-scheme: light dark; }
@@ -312,7 +312,7 @@
           <text x="12.8" y="20.6" class="level2">¬</text>
           <text x="38.0" y="43.4" class="level3"/>
           <text x="38.0" y="20.6" class="level4"/>
-          <text x="38.0" y="43.4" class="level5 deadKey">~</text>
+          <text x="38.0" y="43.4" class="level5 deadKey"></text>
           <text x="38.0" y="20.6" class="level6"/>
         </g>
       </g>
@@ -323,7 +323,7 @@
           <text x="12.8" y="20.6" class="level2">#</text>
           <text x="38.0" y="43.4" class="level3">₁</text>
           <text x="38.0" y="20.6" class="level4">¹</text>
-          <text x="38.0" y="43.4" class="level5">&amp;</text>
+          <text x="38.0" y="43.4" class="level5"></text>
           <text x="38.0" y="20.6" class="level6"/>
         </g>
       </g>
@@ -334,8 +334,8 @@
           <text x="12.8" y="20.6" class="level2">«</text>
           <text x="38.0" y="43.4" class="level3">₂</text>
           <text x="38.0" y="20.6" class="level4">²</text>
-          <text x="38.0" y="43.4" class="level5">&lt;</text>
-          <text x="38.0" y="20.6" class="level6">“</text>
+          <text x="38.0" y="43.4" class="level5"></text>
+          <text x="38.0" y="20.6" class="level6"></text>
         </g>
       </g>
       <g class="numberKey" finger="l3" id="Digit3" transform="translate(180)">
@@ -345,8 +345,8 @@
           <text x="12.8" y="20.6" class="level2">»</text>
           <text x="38.0" y="43.4" class="level3">₃</text>
           <text x="38.0" y="20.6" class="level4">³</text>
-          <text x="38.0" y="43.4" class="level5">&gt;</text>
-          <text x="38.0" y="20.6" class="level6">”</text>
+          <text x="38.0" y="43.4" class="level5"></text>
+          <text x="38.0" y="20.6" class="level6"></text>
         </g>
       </g>
       <g class="numberKey" finger="l2" id="Digit4" transform="translate(240)">
@@ -356,8 +356,8 @@
           <text x="12.8" y="20.6" class="level2">(</text>
           <text x="38.0" y="43.4" class="level3">₄</text>
           <text x="38.0" y="20.6" class="level4">⁴</text>
-          <text x="38.0" y="43.4" class="level5">(</text>
-          <text x="38.0" y="20.6" class="level6">„</text>
+          <text x="38.0" y="43.4" class="level5"></text>
+          <text x="38.0" y="20.6" class="level6"></text>
         </g>
       </g>
       <g class="numberKey" finger="l2" id="Digit5" transform="translate(300)">
@@ -367,8 +367,8 @@
           <text x="12.8" y="20.6" class="level2">)</text>
           <text x="38.0" y="43.4" class="level3">₅</text>
           <text x="38.0" y="20.6" class="level4">⁵</text>
-          <text x="38.0" y="43.4" class="level5">)</text>
-          <text x="38.0" y="20.6" class="level6">‘</text>
+          <text x="38.0" y="43.4" class="level5"></text>
+          <text x="38.0" y="20.6" class="level6"></text>
         </g>
       </g>
     </g>
@@ -380,7 +380,7 @@
           <text x="12.8" y="20.6" class="level2">@</text>
           <text x="38.0" y="43.4" class="level3">₆</text>
           <text x="38.0" y="20.6" class="level4">⁶</text>
-          <text x="38.0" y="43.4" class="level5">@</text>
+          <text x="38.0" y="43.4" class="level5"></text>
           <text x="38.0" y="20.6" class="level6"/>
         </g>
       </g>
@@ -391,8 +391,8 @@
           <text x="12.8" y="20.6" class="level2">+</text>
           <text x="38.0" y="43.4" class="level3">₇</text>
           <text x="38.0" y="20.6" class="level4">⁷</text>
-          <text x="38.0" y="43.4" class="level5">±</text>
-          <text x="38.0" y="20.6" class="level6">÷</text>
+          <text x="38.0" y="43.4" class="level5"></text>
+          <text x="38.0" y="20.6" class="level6"></text>
         </g>
       </g>
       <g class="numberKey" finger="r3" id="Digit8" transform="translate(480)">
@@ -402,8 +402,8 @@
           <text x="12.8" y="20.6" class="level2">^</text>
           <text x="38.0" y="43.4" class="level3">₈</text>
           <text x="38.0" y="20.6" class="level4">⁸</text>
-          <text x="38.0" y="43.4" class="level5 deadKey">^</text>
-          <text x="38.0" y="20.6" class="level6 deadKey">ˇ</text>
+          <text x="38.0" y="43.4" class="level5 deadKey"></text>
+          <text x="38.0" y="20.6" class="level6 deadKey"></text>
         </g>
       </g>
       <g class="numberKey" finger="r4" id="Digit9" transform="translate(540)">
@@ -413,8 +413,8 @@
           <text x="12.8" y="20.6" class="level2">/</text>
           <text x="38.0" y="43.4" class="level3">₉</text>
           <text x="38.0" y="20.6" class="level4">⁹</text>
-          <text x="38.0" y="43.4" class="level5">\</text>
-          <text x="38.0" y="20.6" class="level6">|</text>
+          <text x="38.0" y="43.4" class="level5"></text>
+          <text x="38.0" y="20.6" class="level6"></text>
         </g>
       </g>
       <g class="numberKey" finger="r5" id="Digit0" transform="translate(600)">
@@ -424,8 +424,8 @@
           <text x="12.8" y="20.6" class="level2">*</text>
           <text x="38.0" y="43.4" class="level3">₀</text>
           <text x="38.0" y="20.6" class="level4">⁰</text>
-          <text x="38.0" y="43.4" class="level5">°</text>
-          <text x="38.0" y="20.6" class="level6">×</text>
+          <text x="38.0" y="43.4" class="level5"></text>
+          <text x="38.0" y="20.6" class="level6"></text>
         </g>
       </g>
       <g class="pinkyKey" finger="r5" id="Minus" transform="translate(660)">
@@ -435,7 +435,7 @@
           <text x="12.8" y="20.6" class="level2 deadKey">α</text>
           <text x="38.0" y="43.4" class="level3"/>
           <text x="38.0" y="20.6" class="level4"/>
-          <text x="38.0" y="43.4" class="level5">≠</text>
+          <text x="38.0" y="43.4" class="level5"></text>
           <text x="38.0" y="20.6" class="level6"/>
         </g>
       </g>
@@ -447,8 +447,8 @@
           <text x="12.8" y="20.6" class="level2">§</text>
           <text x="38.0" y="43.4" class="level3"/>
           <text x="38.0" y="20.6" class="level4"/>
-          <text x="38.0" y="43.4" class="level5">‰</text>
-          <text x="38.0" y="20.6" class="level6">¶</text>
+          <text x="38.0" y="43.4" class="level5"></text>
+          <text x="38.0" y="20.6" class="level6"></text>
         </g>
       </g>
       <g class="pinkyKey" finger="r5" id="IntlYen" transform="translate(780)">
@@ -557,7 +557,7 @@
           <text x="12.8" y="20.6" class="level2">V</text>
           <text x="38.0" y="43.4" class="level3">&amp;</text>
           <text x="38.0" y="20.6" class="level4"/>
-          <text x="38.0" y="43.4" class="level5">ŭ</text>
+          <text x="38.0" y="43.4" class="level5"></text>
           <text x="38.0" y="20.6" class="level6"/>
         </g>
       </g>
@@ -568,7 +568,7 @@
           <text x="12.8" y="20.6" class="level2">D</text>
           <text x="38.0" y="43.4" class="level3">*</text>
           <text x="38.0" y="20.6" class="level4">×</text>
-          <text x="38.0" y="43.4" class="level5">(</text>
+          <text x="38.0" y="43.4" class="level5"></text>
           <text x="38.0" y="20.6" class="level6"/>
         </g>
       </g>
@@ -579,7 +579,7 @@
           <text x="12.8" y="20.6" class="level2">L</text>
           <text x="38.0" y="43.4" class="level3">'</text>
           <text x="38.0" y="20.6" class="level4 deadKey">´</text>
-          <text x="38.0" y="43.4" class="level5">)</text>
+          <text x="38.0" y="43.4" class="level5"></text>
           <text x="38.0" y="20.6" class="level6"/>
         </g>
       </g>
@@ -714,7 +714,7 @@
           <text x="12.8" y="20.6" class="level2">T</text>
           <text x="38.0" y="43.4" class="level3">+</text>
           <text x="38.0" y="20.6" class="level4">±</text>
-          <text x="38.0" y="43.4" class="level5">™</text>
+          <text x="38.0" y="43.4" class="level5"></text>
           <text x="38.0" y="20.6" class="level6"/>
         </g>
       </g>
@@ -736,7 +736,7 @@
           <text x="12.8" y="20.6" class="level2">R</text>
           <text x="38.0" y="43.4" class="level3">/</text>
           <text x="38.0" y="20.6" class="level4">÷</text>
-          <text x="38.0" y="43.4" class="level5">®</text>
+          <text x="38.0" y="43.4" class="level5"></text>
           <text x="38.0" y="20.6" class="level6"/>
         </g>
       </g>
@@ -870,7 +870,7 @@
           <text x="12.8" y="20.6" class="level2">Q</text>
           <text x="38.0" y="43.4" class="level3">!</text>
           <text x="38.0" y="20.6" class="level4">¬</text>
-          <text x="38.0" y="43.4" class="level5">–</text>
+          <text x="38.0" y="43.4" class="level5"></text>
           <text x="38.0" y="20.6" class="level6"/>
         </g>
       </g>
@@ -892,7 +892,7 @@
           <text x="12.8" y="20.6" class="level2">H</text>
           <text x="38.0" y="43.4" class="level3">:</text>
           <text x="38.0" y="20.6" class="level4"/>
-          <text x="38.0" y="43.4" class="level5">©</text>
+          <text x="38.0" y="43.4" class="level5"></text>
           <text x="38.0" y="20.6" class="level6"/>
         </g>
       </g>
@@ -903,7 +903,7 @@
           <text x="12.8" y="20.6" class="level2">F</text>
           <text x="38.0" y="43.4" class="level3">?</text>
           <text x="38.0" y="20.6" class="level4 deadKey">˘</text>
-          <text x="38.0" y="43.4" class="level5">‑</text>
+          <text x="38.0" y="43.4" class="level5"></text>
           <text x="38.0" y="20.6" class="level6"/>
         </g>
       </g>
@@ -989,9 +989,9 @@
         <text x="20" y="42.8" text-anchor="middle">한/영</text>
       </g>
       <g class="specialKey" id="AltRight" transform="translate(600)">
-        <rect width="67" height="52" rx="5" ry="5" style="fill: #99f;opacity: 0.7;"/>
+        <rect width="67" height="52" rx="5" ry="5"/>
         <rect width="82" height="52" rx="5" ry="5" class="ergo"/>
-        <text x="11.0" y="42.8" class="win gnu" style="">AltGr</text>
+        <text x="11.0" y="42.8" class="win gnu">AltGr</text>
         <text x="16.4" y="42.8" class="mac" text-anchor="middle">⌥</text>
       </g>
       <g class="specialKey" id="MetaRight" transform="translate(690)">

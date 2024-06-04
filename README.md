@@ -7,17 +7,27 @@ Bépolar
 Dérivé de BÉPO, Bépolar est une disposition clavier s’appuyant sur des mécanismes modernes afin d’améliorer le confort de frappe.
 La disposition est plus confortable que BÉPO en Français, et meilleur que BÉPO pour l’anglais et la programmation avec sa couche AltGr dédiée au développement.
 
+![Disposition Bépolar Simplifiée](img/bepolar_simple.svg)
+
 C’est un bon moyen, pour un bépoète, de tester l’approche 1DFH qui est l’essence d’[Ergo-L](https://ergol.org/) avec un temps d’apprentissage record.
 
 👉 [Apprendre / tester](https://ergol.org/lafayette/#b%C3%A9polar)
 
+## Sommaire
+1. [⁉️ Pourquoi une nouvelle disposition ?](#pourquoi-une-nouvelle-disposition)
+2. [📑 Cahier des Charges](#-cahier-des-charges)
+3. [⌨ Disposition](#-disposition)
+4. [🧩 Installation](#-installation)
+5. [💡 Faites votre propre disposition](#-faites-votre-propre-disposition)
+6. [🙏 Mention](#-mention)
 
-## Pourquoi une nouvelle disposition ?
+
+## ⁉️ Pourquoi une nouvelle disposition ?
 BÉPO m’a permis de découvrir le monde de l’ergonomie clavier et je l’en remercie. Depuis sa sortie, d’autres disposition (bien) plus optimisées ont vu le jour. 
 
 Mais
 
-**Apprendre une nouvelle disposition, c’est long et fastidieux**. Bépolar se veut le plus proche possible de BÉPO tout en évitant son principal problème : les caractères `M Z Ç W` sont ~~très~~ trop excentrés, ce qui est la principale cause de TMS documenté.
+**Apprendre une nouvelle disposition, c’est long et fastidieux**. Bépolar se veut le plus proche possible de BÉPO tout en évitant son principal problème : les caractères `M Z Ç W` sont ~~très~~ trop excentrés, ce qui cause des déviations ulnaire —la principale [cause de TMS documenté](https://onlinelibrary.wiley.com/doi/epdf/10.1002/jor.20599).
 
 Quelques défaut de BÉPO corrigés par Bépolar :
 
@@ -26,9 +36,9 @@ Quelques défaut de BÉPO corrigés par Bépolar :
 3. L’auriculaire droit — `M` est une lettre fréquemment doublée, la mettre en extension sur un doigt faible n’est pas judicieux. 
 4. La programmation — Certains symboles de programmation ont des caractères très excentrés comme le `$`, ce qui est fastidieux pour coder dans certains langages.
 
-Tous les problèmes mentionnés ont la même origine, l’utilisation de touches excentrées. Il faut donc changer d’approche ; Ne plus aller chercher les touches loin avec les doigts, mais plutôt les amener sous les doigts —passer d’un paradigme _finger-to-caps_ à _caps-to-finger_!
+Tous les problèmes mentionnés ont la même origine, l’utilisation de touches excentrées. Il faut donc changer d’approche ; Ne plus aller chercher les touches loin avec les doigts, mais plutôt les amener sous les doigts —passer d’un paradigme _finger-to-caps_ à _caps-to-finger_ !
 
-Pour cela, Bépolar agence toutes les lettres dans la zone la plus confortable du clavier : le pavé de 30 touches (3 colonnes × 5 touches × 2 mains).
+Pour cela, Bépolar agence toutes les lettres dans la zone la plus confortable du clavier : le pavé de 30 touches (3 colonnes × 5 touches × 2 mains), et ça tombe bien, c’est [bon pour la santé](https://www.researchgate.net/publication/12913559_Workplace_Use_of_an_Adjustable_Keyboard_Adjustment_Preferences_and_Effect_on_Wrist_Posture)
 
 La disposition étant très proche de BÉPO, elle s’apprend _très_ rapidement ; moins d’une petite semaine pour retrouver ma vitesse dans mon cas.
 
@@ -53,8 +63,8 @@ La disposition Bépolar est présentée ci-dessous :
 
 ![disposition bepolar](img/bepolar_Default.svg)
 Légende:
-- En noir la touche frappé
-- En rouge les touches « mortes », il faut les frapper puis enchaîner avec un autre caractères pour voir leur effet (comme le `^` en AZERTY.
+- En claire la touche frappé
+- En rouge les touches « mortes », il faut les frapper puis enchaîner avec un autre caractères pour voir leur effet (comme le `^` en AZERTY).
 - En vert le résultat de la touche typographique (en forme d’étoile) combiné avec le caractère sur la touche courante. 
 
 ### Touche Typographique — Niveau 5 — Techiquement un *iso_level_5_latch*, un cousin d’AltGr
@@ -62,19 +72,21 @@ La touche Typographique `★` (en rouge sur le layout) donne accès aux caractè
 - Tous les accents communs en français (aigüe, grave, circonflexe)
 - Certaine diacritique usuelle en langue européenne `ç ñ`
 - Les ligatures les plus courantes `œ, æ, ß`
-- D’autres symboles typographiques usuels tels que l’apostrophe typographique, les espaces insécables (fine ou non), les guillemets anglo-saxons, les points de suspension, le point médian (·), *etc.*
+- D’autres symboles typographiques usuels tels que l’apostrophe typographique, les espaces insécables (fine ou non), les guillemets anglo-saxons, les points de suspension, le point médian `·`, le tiret insécable, *etc.*
 - Des symboles mathématiques tels que `≠ ≃ ± × ₀₋₉⁰⁻⁹` *etc.*
 L’ensemble des symboles accessibles sont ici présentés :
 
 ![disposition bépolar touche morte](img/bepolar_DeadKey.svg)
 
-> ⚠ Ce n’est pas très visible, mais touche morte suivi d’espace permet de faire l’apostrophe (typographique)
+> ⚠ Ce n’est pas visible, mais touche morte suivi d’espace permet de faire **l’apostrophe (typographique)**
+> 
+> le `‑` sur la touche `F` (en bas à droite) est le « tiret insécable » il permet d’être sur qu’un nom composé soit sur la même ligne par exemple
 
 #### Principe
 - La touche Typographique `★` suivie d’une voyelle (colonne du milieu ou *home row*) donne généralement cette dernière avec un accent grave (*i.e.* `à`, `ù`, `è`)
 - La touche Typographique `★` suivie de la touche au-dessus de cette voyelle (colonne haute) donne un accent circonflexe (*i.e.* `â`, `û`, `î`, `ô`). ⚠ Exception pour le `ê` qui est à la droite du `è`
 - La touche Typographique `★` suivie de `i` donne `é` ce qui facilite l’enchainement `ée`
-- Deux appuis successifs sur la touche morte `★★` donne une touche morte trémas `*¨`. Pour faire un `ï` par exemple, il suffit de faire l’enchainement `★★i` (soit trois touches, mais les mots à trémas sont rares).
+- Deux appuis successifs sur la touche morte `★★` donne une touche morte trémas `*¨`. Pour faire un `ï` par exemple, il suffit de faire l’enchaînement `★★i` (soit trois touches, mais les mots à trémas sont rares).
 - La touche Typographique `★` suivie d’un symbole / lettre ayant une variate courante donne cette variante : `★c` → `ç`, `★n` → `ñ`, `★s` → `ß`, `★=` → `≠`, _etc_.
 
 L’utilisation de la touche Typographique pour les accents n’est peut-être pas intuitive de prime abord. En effet, quand on tape à deux doigts comme le commun des mortels, toutes les touches se valent et il est préférable d’avoir une touche excentrée que de taper deux touches.
@@ -84,9 +96,12 @@ En revanche, quand on tape en position dactylo, toutes les touches excentrées s
 Il est en outre possible d’écrire correctement et confortablement Français et en anglais ; et, dans une moindre mesure, l’allemand, l’espagnol et l’espéranto.
 
 ### Alt Gr. — Niveau 3 — ISO level 3
-La couche Alt. Gr est facultative. Elle permet de faciliter la programmation informatique en rendant accessible l’ensemble des symboles utilisé pour coder sur la zonne confortable du clavier.
+La couche Alt.Gr est facultative. Elle permet de faciliter la programmation informatique en rendant accessible l’ensemble des symboles utilisé pour coder sur la zone confortable du clavier. En outre, elle donne accès à certaines touche morte (souvent via shift), ce qui peut être pratique pour un usage ponctuel.
 
-Cette couche est partagée entre les projets Bépolar, [Ergo-L](https://ergol.org/) et [QWERTY-Lafayette](https://qwerty-lafayette.org/). Elle a été pensée pour les développeurs en mettant les symboles les plus courants aux endroits les plus accessibles. 
+Cette couche est partagée entre les projets Bépolar, [Ergo-L](https://ergol.org/) et [QWERTY-Lafayette](https://qwerty-lafayette.org/). Elle a été pensée pour les développeurs :
+- en mettant les symboles les plus courants aux endroits les plus accessibles
+- en positionnant les symboles par bloc pour faciliter l’apprentissage (`() [] {} ^$ +-/`
+- en facilitant l’utilisation de vim.
 
 ![disposition bepolar AltGr](img/bepolar_AltGr.svg)
 
@@ -104,6 +119,16 @@ Les pilotes pour [Linux](#sous-linux), [Mac](#sous-mac) et [Windows](#sous-windo
 Les pilotes sont générés via le script [Kalamine](https://github.com/fabi1cazenave/kalamine). Je mets à disposition la disposition pour tous les systèmes d’exploitation, mais **la version linux est la plus testée**.
 
 ### Sous Linux
+
+> **NB :** Sous Ubuntu / wayland / Gnome, il est préférable de préciser l’utilisation d’ibus pour avoir accès à l’ensembles des charactères et éviter les conflits avec QMK / Kanata, etc.
+> Pour cela, il suffit d’ajouter
+> ```bash
+>INPUT_METHOD=ibus
+>GTK_IM_MODULE=ibus
+>QT_IM_MODULE=ibus
+>XMODIFIERS=@im=ibus
+>``` 
+> au fichier `/etc/environment`
 
 #### Méthode simple | Wayland / X11
 La façon la plus simple d’installer Bépolar est de faire
@@ -131,16 +156,16 @@ pipx install kalamine
 
 ```bash
 # Pour générer les pilotes, télécharger le fichier `Bépolar.yml` du répertoire et faites un :
-kalamine Bépolar.yml
+kalamine build Bépolar.toml
 
 # Pour installer la disposition qui appraraitra dans la catégorie Fr/Bépolar en user-space
-xkalamine install Bépolar.yml
+xkalamine install Bépolar.toml
 
 ```
 
 Pour installer la disposition qui appraraitra dans la catégorie Fr/Bépolar sur tout le système (root). Il faut alors installer kalamine via pyVenv puis
 ```bash
-sudo xkalamine install Bépolar.yml
+sudo xkalamine install Bépolar.toml
 ```
 
 Il peut être nécessaire de se déconnecter et se **reconnecter à sa session**.
