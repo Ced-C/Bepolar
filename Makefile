@@ -1,7 +1,7 @@
 release:
 	rm  dist/*
-	kalamine make Bépolar.yml
-	cp Bépolar.yml dist/
+	kalamine build Bépolar.toml
+	cp Bépolar.toml dist/
 	mv dist/bepolar.svg img/
 	cp img/bepolar.svg img/bepolar_AltGr.svg
 	cp img/bepolar.svg img/bepolar_DeadKey.svg
