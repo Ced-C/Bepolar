@@ -7,6 +7,8 @@ Bépolar
 Dérivé de BÉPO, Bépolar est une disposition clavier s’appuyant sur des mécanismes modernes afin d’améliorer le confort de frappe.
 La disposition est plus confortable que BÉPO en Français, et meilleur que BÉPO pour l’anglais et la programmation avec sa couche AltGr dédiée au développement.
 
+Le principe est simple  : amener les touches sous les doigts (notamment les diacritiques) grâce à une touche spéciale `★` dite « typographique ».  Voici une vue simplifiée de la disposition :
+
 ![Disposition Bépolar Simplifiée](img/bepolar_simple.svg)
 
 C’est un bon moyen, pour un bépoète, de tester l’approche 1DFH qui est l’essence d’[Ergo-L](https://ergol.org/) avec un temps d’apprentissage record.
@@ -51,7 +53,7 @@ Pour ceux qui ne peuvent vivre sans VIM, *et* qui ne souhaitent pas programmer l
 Pour ce faire, voici les contraintes que je me suis données.
 * Le moins de changement possible par rapport à BÉPO, seule quatre (ou cinq sur un clavier iso) touches doivent changer `É È À ^!` (`Ê`)
 * Toutes les lettres sont situées sur le pavé des 30 (3x5x2) touches principales du clavier
-* Les accents et autres diacritiques les plus communs via une touche morte de type [Lafayette](https://qwerty-lafayette.org/). On y mettera aussi quelques symboles typographiques utilisé en français.
+* Les accents et autres diacritiques les plus communs via une touche morte de type [Lafayette](https://qwerty-lafayette.org/). On y mettra aussi quelques symboles typographiques utilisé en français.
 * Les chiffres accessibles en direct
 * Une couche Alt dédiée à la programmation
 * Garder une disposition intuitive
