@@ -11,7 +11,7 @@ Le principe est simple  : amener les touches sous les doigts (notamment les di
 
 ![Disposition Bépolar Simplifiée](img/bepolar_simple.svg)
 
-C’est un bon moyen, pour un bépoète, de tester l’approche 1DFH qui est l’essence d’[Ergo-L](https://ergol.org/) avec un temps d’apprentissage record.
+C’est un bon moyen, pour un bépoète, de tester l’approche 1DFH qui est l’essence d’[Ergo‑L](https://ergol.org/) avec un temps d’apprentissage record.
 
 👉 [Apprendre / tester](https://ergol.org/lafayette/#b%C3%A9polar)
 
@@ -19,9 +19,9 @@ C’est un bon moyen, pour un bépoète, de tester l’approche 1DFH qui est l�
 1. [⁉️ Pourquoi une nouvelle disposition ?](#pourquoi-une-nouvelle-disposition)
 2. [📑 Cahier des Charges](#-cahier-des-charges)
 3. [⌨ Disposition](#-disposition)
-4. [🧩 Installation](#-installation)
-5. [💡 Faites votre propre disposition](#-faites-votre-propre-disposition)
-6. [🙏 Mention](#-mention)
+4. [🧩 Installation](#-installation) ➡️ ([Linux](#sous-linux), [Windows](#sous-windows), [MacOS](#sous-mac))
+1. [💡 Faites votre propre disposition](#-faites-votre-propre-disposition)
+2. [🙏 Mention](#-mention)
 
 
 ## ⁉️ Pourquoi une nouvelle disposition ?
@@ -44,7 +44,7 @@ Pour cela, Bépolar agence toutes les lettres dans la zone la plus confortable d
 
 La disposition étant très proche de BÉPO, elle s’apprend _très_ rapidement ; moins d’une petite semaine pour retrouver ma vitesse dans mon cas.
 
-Pour ceux ne pratiquant pas BÉPO, je conseillerais plutôt de passer sur une disposition telle que [Ergo-L](https://ergol.org/) plus optimisée que Bépolar, mais requérant un apprentissage long.
+Pour ceux ne pratiquant pas BÉPO, je conseillerais plutôt de passer sur une disposition telle que [Ergo‑L](https://ergol.org/) plus optimisée que Bépolar, mais requérant un apprentissage long.
 
 Pour ceux qui ne peuvent vivre sans VIM, *et* qui ne souhaitent pas programmer leur clavier (via QMK ou un logiciel comme [Kanata](https://github.com/jtroo/kanata)) [QWERTY-Lafayette](https://qwerty-lafayette.org/) est un bon compromis.
 
@@ -100,7 +100,7 @@ Il est en outre possible d’écrire correctement et confortablement Français e
 ### Alt Gr. — Niveau 3 — ISO level 3
 La couche Alt.Gr est facultative. Elle permet de faciliter la programmation informatique en rendant accessible l’ensemble des symboles utilisé pour coder sur la zone confortable du clavier. En outre, elle donne accès à certaines touche morte (souvent via shift), ce qui peut être pratique pour un usage ponctuel.
 
-Cette couche est partagée entre les projets Bépolar, [Ergo-L](https://ergol.org/) et [QWERTY-Lafayette](https://qwerty-lafayette.org/). Elle a été pensée pour les développeurs :
+Cette couche est partagée entre les projets Bépolar, [Ergo‑L](https://ergol.org/) et [QWERTY-Lafayette](https://qwerty-lafayette.org/). Elle a été pensée pour les développeurs :
 - en mettant les symboles les plus courants aux endroits les plus accessibles
 - en positionnant les symboles par bloc pour faciliter l’apprentissage (`() [] {} ^$ +-/`
 - en facilitant l’utilisation de vim.
@@ -108,13 +108,13 @@ Cette couche est partagée entre les projets Bépolar, [Ergo-L](https://ergol.or
 ![disposition bepolar AltGr](img/bepolar_AltGr.svg)
 
 ### La touche espace
-La touche espace est utilisée pour les symboles suivants :
+La touche espace (␣) est utilisée pour les symboles suivants :
 - L’espace classique : ` `
-- L’espace insécable fine (shift+espace) : ` `
-- L’espace insécable (AltGr+shift+espace) : ` `
-- L’apostrophe typographique (★+espace) : `’`
+- L’espace insécable fine (shift+␣) : ` `
+- L’espace insécable (AltGr+shift+␣) : ` `
+- L’apostrophe typographique (★+␣)  : `’`
 
-> **NB :** Contrairement à bépo, l’underscore `_` n’est pas en AltGr+space, mais en ★+x (ou AltGr-.). Cela permet d’enchaîner espaces et symboles de programmation en couche AltGr, et de permettre d’enchaîner du texte facilement en snake_case. 
+> **⚠️ NB :** Contrairement à bépo, l’underscore `_` n’est pas en AltGr+space, mais en ★+x (ou AltGr-.). Cela permet d’enchaîner espaces et symboles de programmation en couche AltGr, et de permettre d’enchaîner du texte facilement en snake_case. 
 
 ## 🧩 Installation
 Les pilotes pour [Linux](#sous-linux), [Mac](#sous-mac) et [Windows](#sous-windows) sont disponibles dans le dossier `dist`.
@@ -122,7 +122,7 @@ Les pilotes sont générés via le script [Kalamine](https://github.com/fabi1caz
 
 ### Sous Linux
 
-> **NB :** Sous Ubuntu / wayland / Gnome, il est préférable de préciser l’utilisation d’ibus pour avoir accès à l’ensembles des charactères et éviter les conflits avec QMK / Kanata, etc.
+> **NB :** Sous Ubuntu / wayland / Gnome, il est préférable de préciser l’utilisation d’ibus (installé par défaut) pour avoir accès à l’ensembles des caractères et éviter les conflits avec QMK / Kanata, etc.
 > Pour cela, il suffit d’ajouter
 > ```bash
 >INPUT_METHOD=ibus
@@ -135,8 +135,8 @@ Les pilotes sont générés via le script [Kalamine](https://github.com/fabi1caz
 #### Méthode simple | Wayland / X11
 La façon la plus simple d’installer Bépolar est de faire
 ```bash
-wget https://github.com/Ced-C/Bepolar/blob/master/dist/bepolar.xkb_custom
-sudo cp bepolar.xkb_custom /usr/share/X11/xkb/symbols/custom
+sudo wget -O ${XKB_CONFIG_ROOT:-/usr/share/X11/xkb}/symbols/custom \
+https://github.com/Ced-C/Bepolar/blob/master/dist/bepolar.xkb_custom
 ```
 
 En fonction de votre environnement de bureau, il faut ensuite se déconnecter et se **reconnecter à sa session** pour que le système voit la nouvelle disposition dans les paramètres clavier. Elle ne sera pas dans Français, mais dans custom et sera nommée `custom / A user-defined custom layout`.
@@ -147,12 +147,12 @@ Pour avoir la disposition d’installée sous son vrai nom, il faut passer par l
 
 Récupérer le layout de Bépolar :
 ```bash
-wget https://github.com/Ced-C/Bepolar/blob/master/Bépolar.yml
+wget https://github.com/Ced-C/Bepolar/blob/master/Bépolar.toml
 ```
 
 Installer Kalamine  :
 ```bash
-pip3 install pipx # si nécéssaire, pipx est une amélioration de pip
+pip3 install pipx # si nécessaire, pipx est une amélioration de pip
 pipx install kalamine
 ```
 
@@ -160,12 +160,12 @@ pipx install kalamine
 # Pour générer les pilotes, télécharger le fichier `Bépolar.yml` du répertoire et faites un :
 kalamine build Bépolar.toml
 
-# Pour installer la disposition qui appraraitra dans la catégorie Fr/Bépolar en user-space
+# Pour installer la disposition qui apparaitra dans la catégorie Fr/Bépolar en user-space
 xkalamine install Bépolar.toml
 
 ```
 
-Pour installer la disposition qui appraraitra dans la catégorie Fr/Bépolar sur tout le système (root). Il faut alors installer kalamine via pyVenv puis
+Pour installer la disposition qui apparaitra dans la catégorie Fr/Bépolar sur tout le système (root). Il faut alors installer kalamine via pyVenv puis
 ```bash
 sudo xkalamine install Bépolar.toml
 ```
@@ -178,14 +178,14 @@ On peut aussi l’enregistrer dans `~/Library/Keyboard Layouts` (pour le seul ut
 Il est possible (et recommandé) d’utiliser Karabiner pour inverser les touches ⌘ Command et ⌥ Option à droite, afin d’accéder plus facilement à la couche de symboles.
 
 ### Sous Windows
-Si vous avez les droits d’administration sur votre poste Windows, utiliser l’installeur (`setup.exe`) disponible dans [Bépolar.zip](dist/bepolar-0.6.0-win.zip)
+Si vous avez les droits d’administration sur votre poste Windows, utiliser l’installeur (`setup.exe`) disponible dans [Bépolar.zip](dist/bepolar-0.7.0-win.zip)
 Exécuter l’installeur et relancer la session. La disposition de clavier apparaît dans la barre de langues (indicateur de la barre des tâches).
 
 Si vous n’avez pas les droits d’administrations, une version portable est disponible : [Bépolar.ahk](dist/bepolar.ahk)
 Après lancement, un indicateur apparaît dans la barre des tâches. Le pilote peut être activé / désactivé avec le raccourci Alt‑AltGr.
 
 ## 💡 Faites votre propre disposition
-Si vous souhaitez modifier la disposition pour l’adapter à vos besoins, le fichier `Bepolar.yml` est lisible facilement et peut être modifié à la main avant d’utiliser kalamine pour générer vos propres pilotes.
+Si vous souhaitez modifier la disposition pour l’adapter à vos besoins, le fichier `Bepolar.toml` est lisible facilement et peut être modifié à la main avant d’utiliser kalamine pour générer vos propres pilotes.
 
 ## 🙏 Mention
 Un _grand_ merci à `Kazé` pour ses nombreux softs utiles dont :
