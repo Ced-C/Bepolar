@@ -198,3 +198,4 @@ De même, merci à :
 - `Nuclear Squid` pour ses explications, et son [serveur discord](https://discord.gg/RH34GjQEgC) qui m’ont permis de me lancer dans le sujet
 - `Lobre` pour ses retours éclairants
 - `Aeshar` & `Brab` et leur version custom `BMP` de laquelle `Bépolar` est issue.
+- `aurelberra` pour ses contributions à ce readme !
