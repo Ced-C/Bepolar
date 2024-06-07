@@ -10,21 +10,20 @@ Le principe est simple : amener les touches sous les doigts (notamment les dia
 
 ![Disposition Bépolar simplifiée](img/bepolar_simple.svg)
 
-C’est un bon moyen, pour un bépoète, de tester l’approche 1DFH qui est l’essence d’[Ergo‑L](https://ergol.org/) – avec un temps d’apprentissage record.
+C’est un bon moyen, pour un bépoète, de tester l’approche 1DFH qui est l’essence d’[Ergo-L](https://ergol.org/) avec un temps d’apprentissage record.
 
 👉 [Apprendre / tester](https://ergol.org/lafayette/#b%C3%A9polar)
 
 ## Sommaire
+1. [⁉️ Pourquoi une nouvelle disposition ?](#pourquoi-une-nouvelle-disposition)
+2. [📑 Cahier des Charges](#-cahier-des-charges)
+3. [⌨ Disposition](#-disposition)
+4. [🧩 Installation](#-installation) ➡️ ([Linux](#sous-linux), [Windows](#sous-windows), [MacOS](#sous-mac))
+1. [💡 Faites votre propre disposition](#-faites-votre-propre-disposition)
+2. [🙏 Mention](#-mention)
 
-1. [⁉️ Pourquoi une nouvelle disposition ?](#️pourquoi-une-nouvelle-disposition)
-2. [📑 Le cahier des charges](#-le-cahier-des-charges)
-3. [⌨ La disposition](#-la-disposition)
-4. [🧩 Installation](#-installation)
-5. [💡 Faites votre propre disposition](#-faites-votre-propre-disposition)
-6. [🙏 Mentions](#-mentions)
 
 ## ⁉️ Pourquoi une nouvelle disposition ?
-
 BÉPO m’a permis de découvrir le monde de l’ergonomie clavier et je l’en remercie. Depuis sa sortie, d’autres dispositions (bien) plus optimisées ont vu le jour.
 
 Mais…
@@ -144,7 +143,7 @@ Ces pilotes sont générés via le script [Kalamine](https://github.com/fabi1caz
 >QT_IM_MODULE=ibus
 >XMODIFIERS=@im=ibus
 >```
->
+
 #### Méthode simple : Wayland/X11
 
 La façon la plus simple d’installer Bépolar est d’exécuter
@@ -177,14 +176,15 @@ pipx install kalamine
 # Pour générer les pilotes, téléchargez le fichier `Bépolar.toml` du répertoire et faites
 kalamine build Bépolar.toml
 
-# Pour installer la disposition qui apparaîtra dans la catégorie Fr/Bépolar en user-space faites
-xkalamine install Bépolar.toml
+# Pour installer la disposition qui appraraitra dans la catégorie Fr/Bépolar en user-space
+xkalamine build Bépolar.toml
+
 ```
 
 Pour installer la disposition qui apparaîtra dans la catégorie Fr/Bépolar sur tout le système (root), installez Kalamine via pyVenv puis faites
 
 ```bash
-sudo xkalamine install Bépolar.toml
+sudo xkalamine build Bépolar.toml
 ```
 
 Il peut être nécessaire de se déconnecter et **se reconnecter à sa session**.
@@ -197,7 +197,7 @@ Il est possible (et recommandé) d’utiliser Karabiner pour inverser les touche
 
 ### Sous Windows
 
-Si vous avez les droits d’administration sur votre poste Windows, utilisez l’installeur (`setup.exe`) disponible dans [Bépolar.zip](dist/bepolar-0.6.0-win.zip). Exécutez l’installeur et relancez la session. La disposition de clavier apparaît dans la barre de langues (indicateur de la barre des tâches).
+Si vous avez les droits d’administration sur votre poste Windows, utilisez l’installeur (`setup.exe`) disponible dans [Bépolar.zip](dist/bepolar-0.7.0-win.zip). Exécutez l’installeur et relancez la session. La disposition de clavier apparaît dans la barre de langues (indicateur de la barre des tâches).
 
 Si vous n’avez pas les droits d’administration, une version portable est disponible : [Bépolar.ahk](dist/bepolar.ahk).
 Après le lancement, un indicateur apparaît dans la barre des tâches. Le pilote peut être activé ou désactivé avec le raccourci Alt‑AltGr.
@@ -220,3 +220,4 @@ De même, merci à :
 * `Nuclear Squid` pour ses explications et son [serveur Discord](https://discord.gg/RH34GjQEgC), qui m’ont permis de me lancer dans le sujet
 * `Lobre` pour ses retours éclairants
 * `Aeshar` et `Brab` pour leur version custom `BMP`, de laquelle `Bépolar` est issue
+* `aurelberra` pour ses contributions à ce readme !
