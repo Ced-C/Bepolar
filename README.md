@@ -121,9 +121,9 @@ Cette couche est partagée entre les projets Bépolar, [Ergo‑L](https://ergol.
 
 La touche espace (␣) est utilisée pour les symboles suivants :
 
-* L’espace classique : ``
-* L’espace insécable fine (shift+␣) : ``
-* L’espace insécable (AltGr+shift+␣) : ``
+* L’espace classique : ` `
+* L’espace insécable fine (shift+␣) : ` `
+* L’espace insécable (AltGr+shift+␣) : ` `
 * L’apostrophe typographique (★+␣) : `’`
 
 > ⚠️ Contrairement au BÉPO, le tiret bas (`_`, *underscore*) n’est pas en AltGr+␣, mais en ★+x (ou AltGr+`.`). Cela permet d’enchaîner espaces et symboles de programmation en couche AltGr, et de composer facilement du texte en snake_case.
