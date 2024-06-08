@@ -202,6 +202,14 @@ Si vous avez les droits d’administration sur votre poste Windows, utilisez l�
 Si vous n’avez pas les droits d’administration, une version portable est disponible : [Bépolar.ahk](dist/bepolar.ahk).
 Après le lancement, un indicateur apparaît dans la barre des tâches. Le pilote peut être activé ou désactivé avec le raccourci Alt‑AltGr.
 
+#### Résolution de problèmes
+
+Sur Windows avec GeForce Experience, il se peut que le raccourci AltGr+M (pour écrire `<`) soit capté par « Superposition en jeu » pour couper le micro (car AltGr est considéré comme Ctrl+Alt).
+
+Il suffit d’aller dans GeForce Experience sur la roue dentée > Généralités > Superposition en jeu : Paramètres > Raccourcis claviers, pour changer ou supprimer ce raccourci. Il est aussi possible de désactiver complètement la Superposition en jeu.
+
+De même avec Keepass 2, le raccourci AltGr+A (pour écrire `{`) est capté même si le programme n’est pas au premier plan. Pour cela, aller dans Tools > Options… > onglet Integration > encart System-wide hot keys, et changer ou supprimer la valeur du raccourci Global auto-type.
+
 ## 💡 Faites votre propre disposition
 
 Si vous souhaitez modifier la disposition pour l’adapter à vos besoins, le fichier `Bépolar.toml` est lisible facilement et peut être modifié à la main avant d’utiliser Kalamine pour générer vos propres pilotes.
