@@ -15,15 +15,16 @@ C’est un bon moyen, pour un bépoète, de tester l’approche 1DFH qui est l�
 👉 [Apprendre / tester](https://ergol.org/lafayette/#b%C3%A9polar)
 
 ## Sommaire
-1. [⁉️ Pourquoi une nouvelle disposition ?](#pourquoi-une-nouvelle-disposition)
-2. [📑 Cahier des Charges](#-cahier-des-charges)
-3. [⌨ Disposition](#-disposition)
-4. [🧩 Installation](#-installation) ➡️ ([Linux](#sous-linux), [Windows](#sous-windows), [MacOS](#sous-mac))
-1. [💡 Faites votre propre disposition](#-faites-votre-propre-disposition)
-2. [🙏 Mention](#-mention)
 
+1. [⁉️ Pourquoi une nouvelle disposition ?](#️pourquoi-une-nouvelle-disposition)
+2. [📑 Le cahier des charges](#-le-cahier-des-charges)
+3. [⌨ La disposition](#-la-disposition)
+4. [🧩 Installation](#-installation)
+5. [💡 Faites votre propre disposition](#-faites-votre-propre-disposition)
+6. [🙏 Mentions](#-mentions)
 
 ## ⁉️ Pourquoi une nouvelle disposition ?
+
 BÉPO m’a permis de découvrir le monde de l’ergonomie clavier et je l’en remercie. Depuis sa sortie, d’autres dispositions (bien) plus optimisées ont vu le jour.
 
 Mais…
