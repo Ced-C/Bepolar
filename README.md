@@ -178,14 +178,14 @@ pipx install kalamine
 kalamine build Bépolar.toml
 
 # Pour installer la disposition qui appraraitra dans la catégorie Fr/Bépolar en user-space
-xkalamine build Bépolar.toml
+xkalamine install Bépolar.toml
 
 ```
 
 Pour installer la disposition qui apparaîtra dans la catégorie Fr/Bépolar sur tout le système (root), installez Kalamine via pyVenv puis faites
 
 ```bash
-sudo xkalamine build Bépolar.toml
+sudo xkalamine install Bépolar.toml
 ```
 
 Il peut être nécessaire de se déconnecter et **se reconnecter à sa session**.
