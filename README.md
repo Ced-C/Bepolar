@@ -70,7 +70,6 @@ Légende :
 
 * En clair, la touche frappée
 * En rouge, les touches « mortes » : il faut les frapper puis enchaîner avec un autre caractère pour voir leur effet (comme le `^` en AZERTY)
-* En vert, le résultat de la touche typographique (en forme d’étoile) combiné avec le caractère sur la touche courante
 
 ### Touche typographique — niveau 5 (techniquement un *iso_level_5_latch*, cousin d’AltGr)
 
