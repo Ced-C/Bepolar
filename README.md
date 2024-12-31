@@ -149,8 +149,7 @@ Ces pilotes sont générés via le script [Kalamine](https://github.com/fabi1caz
 La façon la plus simple d’installer Bépolar est d’exécuter
 
 ```bash
-sudo wget -O ${XKB_CONFIG_ROOT:-/usr/share/X11/xkb}/symbols/custom \
-https://github.com/Ced-C/Bepolar/blob/master/dist/bepolar.xkb_custom
+sudo wget -O ${XKB_CONFIG_ROOT:-/usr/share/X11/xkb}/symbols/custom https://github.com/Ced-C/Bepolar/blob/master/dist/bepolar.xkb_symbols
 ```
 
 En fonction de l’environnement de bureau, il faut peut-être ensuite se déconnecter et **se reconnecter à sa session** pour que le système voie la nouvelle disposition dans les paramètres clavier. Elle ne sera pas dans la liste des dispositions du français, mais dans « custom » et sera nommée `custom / A user-defined custom layout`.
